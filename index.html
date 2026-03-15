@@ -232,8 +232,23 @@
       <p class="section-desc">Explore a live mind map visualization showing how five cognitive streams analyze a single prompt.</p>
     </div>
 
-    <div class="demo-prompt reveal"><input class="demo-prompt-input" id="observer-prompt" type="text" placeholder="Type a prompt to test Observer reasoning…" style="width:100%;padding:0.75rem 1rem;border-radius:0.5rem;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);font-size:var(--text-base);"></div>
-
+   <div class="demo-prompt reveal">
+  <input
+    class="demo-prompt-input"
+    id="observer-prompt"
+    type="text"
+    placeholder="Type a prompt to test Observer reasoning…"
+    style="width:100%;padding:0.75rem 1rem;border-radius:0.5rem;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);font-size:var(--text-base);"
+  >
+  <button
+    id="observer-run"
+    class="btn btn-primary"
+    style="margin-top:0.75rem;"
+  >
+    Run Observer
+  </button>
+</div>
+     
     <div class="demo-container reveal">
       <div class="demo-toolbar">
         <div class="demo-legend">
@@ -258,9 +273,9 @@
           </div>
           <div class="synthesis-label">Higher-Order Observer Synthesis</div>
         </div>
-        <p class="synthesis-text">
-          Universities must adopt a three-pronged transformation strategy: <strong>restructure curricula</strong> around AI-human collaboration skills and cross-disciplinary thinking (not just technical AI literacy), <strong>build adaptive institutional systems</strong> with rapid industry-academia feedback loops and lifelong learning pathways, and <strong>embed critical safeguards</strong> including ethical AI frameworks, critical thinking preservation, and equitable access provisions. The most impactful immediate actions are faculty AI training programs, industry partnership models for real-world AI project exposure, and assessment redesign that evaluates human judgment alongside AI-augmented output. Long-term success requires treating AI readiness not as a single course addition but as a systemic transformation of how universities conceptualize, deliver, and measure education.
-        </p>
+        <p class="synthesis-text" id="observer-output">
+  Observer’s multi‑stream reasoning will appear here after you run the demo.
+</p>
       </div>
     </div>
   </div>
