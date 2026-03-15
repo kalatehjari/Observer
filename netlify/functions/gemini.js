@@ -46,14 +46,17 @@ exports.handler = async (event) => {
     }
 
     const data = await response.json();
-    const text =
-      (data.candidates &&
-        data.candidates[0] &&
-        data.candidates[0].content &&
-        data.candidates[0].content.parts &&
-        data.candidates[0].content.parts[0] &&
-        data.candidates[0].content.parts[0].text) ||
-      'No response';
+    
+    
+    const parts =
+  data.candidates?.[0]?.content?.parts || [];
+
+const text =
+  parts
+    .map(p => p.text || '')
+    .join('\n')
+    .trim() || 'No response';
+
 
     return {
       statusCode: 200,
