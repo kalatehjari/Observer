@@ -45,17 +45,15 @@ exports.handler = async (event) => {
       };
     }
 
-    const data = await response.json();
-    
-    
-    const parts =
-  data.candidates?.[0]?.content?.parts || [];
+   const data = await response.json();
+console.log('Gemini raw data:', JSON.stringify(data, null, 2));
 
-const text =
-  parts
-    .map(p => p.text || '')
-    .join('\n')
-    .trim() || 'No response';
+const parts = data.candidates?.[0]?.content?.parts || [];
+const text = parts
+  .map(p => p.text || '')
+  .join('\n\n')
+  .trim() || 'No response';
+
 
 
     return {
