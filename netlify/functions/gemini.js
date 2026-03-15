@@ -13,24 +13,35 @@ exports.handler = async (event) => {
       return { statusCode: 500, body: 'API key not set' };
     }
 
-const response = await fetch(
-  'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=' + apiKey,
-  {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt || 'Hello from Observer demo' }] }],
-      generationConfig: { maxOutputTokens: 300 }
-    })
-  }
-);
+    const response = await fetch(
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': apiKey,               // <- header changed
+        },
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text: prompt || 'Hello from Observer demo',
+                },
+              ],
+            },
+          ],
+          generationConfig: { maxOutputTokens: 300 },
+        }),
+      }
+    );
 
     if (!response.ok) {
       const errText = await response.text();
       console.error('Gemini HTTP error', response.status, errText);
       return {
         statusCode: 500,
-        body: 'Error calling Gemini'
+        body: 'Error calling Gemini',
       };
     }
 
@@ -47,7 +58,7 @@ const response = await fetch(
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text })
+      body: JSON.stringify({ text }),
     };
   } catch (error) {
     console.error(error);
