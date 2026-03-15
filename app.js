@@ -596,39 +596,57 @@ async function callObserverAI(prompt) {
     const response = await fetch('/.netlify/functions/gemini', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        prompt: `Observer multi-stream reasoning mode. User prompt: "${prompt}". 
-Provide structured response with Analytical, Creative, Critical, Systems, Pragmatic streams.`
+      body: JSON.stringify({
+        prompt:
+          'Observer multi-stream reasoning mode. ' +
+          'User prompt: "' + prompt + '". ' +
+          'Provide structured response with Analytical, Creative, Critical, Systems, Pragmatic streams.'
       })
     });
+
+    if (!response.ok) {
+      throw new Error('Gemini API error: ' + response.statusText);
+    }
+
     const data = await response.json();
-    return data.text;
+    return data.text || 'No response from model.';
   } catch (error) {
+    console.error(error);
     return 'Demo temporarily unavailable (check console).';
   }
 }
 
+
 // Connect to demo UI - adjust IDs if needed
 document.addEventListener('DOMContentLoaded', () => {
-  // Find demo elements (update selectors to match your HTML)
-  const demoInput = document.querySelector('.demo-prompt-input, #demo-input, input[placeholder*="prompt"]');
-  const demoButton = document.querySelector('.demo-button, #demo-submit, button:has-text("Run")');
-  const demoOutput = document.querySelector('.demo-output, #demo-result, .synthesis-text');
-  
-  if (demoButton && demoInput) {
-    demoButton.onclick = async () => {
-      const prompt = demoInput.value.trim();
-      if (prompt && demoOutput) {
-        demoOutput.textContent = '🧠 Observer thinking...';
-        const result = await callObserverAI(prompt);
-        demoOutput.textContent = result;
-      }
-    };
+  const demoInput = document.getElementById('observer-prompt');
+  const demoButton = document.getElementById('observer-run');
+  const demoOutput = document.getElementById('observer-output');
+
+  if (!demoInput || !demoButton || !demoOutput) {
+    console.warn('Observer demo elements not found in DOM.');
+    return;
   }
-  
-  // Console test
-  console.log('Observer Gemini ready. Test: callObserverAI("hello")');
+
+  demoButton.addEventListener('click', async () => {
+    const prompt = demoInput.value.trim();
+    if (!prompt) return;
+
+    demoOutput.textContent = 'Observer thinking…';
+    demoButton.disabled = true;
+
+    try {
+      const result = await callObserverAI(prompt);
+      demoOutput.textContent = result;
+    } catch (err) {
+      console.error(err);
+      demoOutput.textContent = 'Error calling Observer demo. Check console/logs.';
+    } finally {
+      demoButton.disabled = false;
+    }
+  });
 });
+
 
 
 })();
