@@ -14,16 +14,16 @@ exports.handler = async (event) => {
     }
 
     const response = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + apiKey,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt || 'Hello from Observer demo' }] }],
-          generationConfig: { maxOutputTokens: 300 }
-        })
-      }
-    );
+  'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-001:generateContent?key=' + apiKey,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt || 'Hello from Observer demo' }] }],
+      generationConfig: { maxOutputTokens: 300 }
+    })
+  }
+);
 
     if (!response.ok) {
       const errText = await response.text();
