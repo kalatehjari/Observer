@@ -590,5 +590,45 @@
       }
     });
   });
+  // ========== GEMINI OBSERVER DEMO ==========
+async function callObserverAI(prompt) {
+  try {
+    const response = await fetch('/.netlify/functions/gemini', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        prompt: `Observer multi-stream reasoning mode. User prompt: "${prompt}". 
+Provide structured response with Analytical, Creative, Critical, Systems, Pragmatic streams.`
+      })
+    });
+    const data = await response.json();
+    return data.text;
+  } catch (error) {
+    return 'Demo temporarily unavailable (check console).';
+  }
+}
+
+// Connect to demo UI - adjust IDs if needed
+document.addEventListener('DOMContentLoaded', () => {
+  // Find demo elements (update selectors to match your HTML)
+  const demoInput = document.querySelector('.demo-prompt-input, #demo-input, input[placeholder*="prompt"]');
+  const demoButton = document.querySelector('.demo-button, #demo-submit, button:has-text("Run")');
+  const demoOutput = document.querySelector('.demo-output, #demo-result, .synthesis-text');
+  
+  if (demoButton && demoInput) {
+    demoButton.onclick = async () => {
+      const prompt = demoInput.value.trim();
+      if (prompt && demoOutput) {
+        demoOutput.textContent = '🧠 Observer thinking...';
+        const result = await callObserverAI(prompt);
+        demoOutput.textContent = result;
+      }
+    };
+  }
+  
+  // Console test
+  console.log('Observer Gemini ready. Test: callObserverAI("hello")');
+});
+
 
 })();
