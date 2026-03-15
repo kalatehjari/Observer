@@ -1,12 +1,12 @@
 Current artificial intelligence reasoning systems predominantly operate through
-single-stream, sequential inference—generating one chain of thought at a time and
+single-stream, sequential inference – generating one chain of thought at a time and
 selecting from sampled outputs. While techniques such as chain-of-thought prompting,
 tree-of-thought search, and multi-agent debate have improved reasoning quality, they
 do not systematically enforce perspective diversity or provide transparent
 meta-cognitive synthesis. This paper introduces Observer, a multi-stream
 meta-cognitive framework for AI-augmented reasoning that addresses these
 limitations. Observer decomposes a user prompt into parallel streams of thought, each
-governed by a distinct cognitive lens—analytical, creative, critical, systems-thinking,
+governed by a distinct cognitive lens – analytical, creative, critical, systems-thinking,
 and pragmatic. Each stream independently generates a structured reasoning chain,
 extracts key concepts with importance weightings, and produces a color-coded mind
 map visualization. A novel Higher-Order Observer (HOO) then performs meta-cognitive
