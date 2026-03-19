@@ -1,6 +1,6 @@
 # Observer Gemini Chat
 
-Next.js app with Gemini API on Vercel Hobby plan.
+Next.js app with Gemini API on Vercel Hobby plan. 
 
 Current artificial intelligence reasoning systems predominantly operate through
 single-stream, sequential inference – generating one chain of thought at a time and
