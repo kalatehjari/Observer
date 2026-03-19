@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 
 export default function Home() {
@@ -8,46 +9,91 @@ export default function Home() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!prompt.trim()) return;
+    
     setLoading(true);
-    
-    setMessages(prev => [...prev, { role: 'user', content: prompt }]);
-    
+    const userMessage = { role: 'user' as const, content: prompt };
+    setMessages(prev => [...prev, userMessage]);
+    setPrompt('');
+
     try {
       const res = await fetch('/api/gemini', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt }),
+        body: JSON.stringify({ prompt: userMessage.content }),
       });
       
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      
       const data = await res.json();
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
-    } catch (error) {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Error: ' + error }]);
+      setMessages(prev => [...prev, { role: 'assistant' as const, content: data.response }]);
+    } catch (error: any) {
+      setMessages(prev => [...prev, { 
+        role: 'assistant' as const, 
+        content: `Error: ${error.message}` 
+      }]);
+    } finally {
+      setLoading(false);
     }
-    
-    setPrompt('');
-    setLoading(false);
   };
 
   return (
     <main style={{ padding: 20, maxWidth: 800, margin: 'auto' }}>
       <h1>Gemini Chat (✅ Vercel Hobby)</h1>
-      <div style={{ height: 400, border: '1px solid #ccc', overflowY: 'scroll', padding: 10, margin: '20px 0' }}>
-        {messages.map((m, i) => (
-          <div key={i} style={{ marginBottom: 10 }}>
-            <strong>{m.role.toUpperCase()}:</strong> {m.content}
-          </div>
-        ))}
+      <div style={{ 
+        height: 400, 
+        border: '1px solid #ccc', 
+        overflowY: 'scroll', 
+        padding: 10, 
+        margin: '20px 0',
+        background: '#f9f9f9'
+      }}>
+        {messages.length === 0 ? (
+          <p style={{ color: '#666', textAlign: 'center', paddingTop: 100 }}>
+            Ask Gemini anything...
+          </p>
+        ) : (
+          messages.map((m, i) => (
+            <div key={i} style={{ marginBottom: 15 }}>
+              <strong style={{ color: m.role === 'user' ? '#0070f3' : '#10b981' }}>
+                {m.role === 'user' ? 'You' : 'Gemini'}
+              </strong>
+              : <span>{m.content}</span>
+            </div>
+          ))
+        )}
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex' }}>
         <input
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Ask Gemini..."
+          placeholder="Type your message..."
           disabled={loading}
-          style={{ flex: 1, padding: 12, borderRadius: 8, border: '1px solid #ddd' }}
+          style={{ 
+            flex: 1, 
+            padding: 12, 
+            borderRadius: 8, 
+            border: '1px solid #ddd',
+            fontSize: 16
+          }}
+          maxLength={2000}
         />
         <button 
           type="submit" 
-          disabled={loading}
-          style={{ padding: 12, marginLeft: 10, background: '#0070f3
+          disabled={loading || !prompt.trim()}
+          style={{ 
+            padding: '12px 24px', 
+            marginLeft: 10, 
+            background: loading ? '#ccc' : '#0070f3',
+            color: 'white', 
+            border: 'none', 
+            borderRadius: 8,
+            cursor: loading ? 'not-allowed' : 'pointer'
+          }}
+        >
+          {loading ? '...' : 'Send'}
+        </button>
+      </form>
+    </main>
+  );
+}
