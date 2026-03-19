@@ -1,23 +1,24 @@
-import { streamText } from 'ai';
-import { google } from '@ai-sdk/google';
+import { GoogleGenerativeAIStream } from 'ai';
+import { generateText } from '@google/generative-ai';
 
 export const runtime = 'edge';
-export const preferredRegion = 'iad1';  // Optional: faster cold starts
 
 export async function POST(request: Request) {
   try {
-    const { messages } = await request.json();
-
-    const result = await streamText({
-      model: google('gemini-1.5-flash-latest'),  // Use -latest suffix
-      messages,
-    });
-
-    return result.toAIStreamResponse();
+    const { prompt } = await request.json();
+    
+    const genAI = new generateText.GoogleGenerativeAI(
+      process.env.GOOGLE_GENERATIVE_AI_API_KEY!
+    );
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    
+    const result = await model.generateContent(prompt);
+    const text = await result.response.text();
+    
+    return Response.json({ response: text });
   } catch (error: any) {
-    console.error('Gemini API error:', error);
     return Response.json(
-      { error: 'Internal server error', details: error.message },
+      { error: 'Gemini API error', details: error.message },
       { status: 500 }
     );
   }
