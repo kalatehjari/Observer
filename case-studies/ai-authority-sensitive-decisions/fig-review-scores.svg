@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="488" viewBox="0 0 900 488" role="img" font-family="Helvetica, Arial, sans-serif">
+<title>Blind review scores, draft and enhanced paper</title>
+<desc>Eight criteria scored 1 to 10 by a blind reviewer. Draft total 44, enhanced total 53.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="bold" fill="#1d2933">Blind review: scores by criterion (1 to 10)</text>
+<rect x="20" y="44" width="14" height="14" fill="#9AA5B1"/><text x="40" y="56" font-size="13" fill="#1d2933">Agent draft (total 44 of 80)</text>
+<rect x="240" y="44" width="14" height="14" fill="#1F6FB2"/><text x="260" y="56" font-size="13" fill="#1d2933">Enhanced after Observer (total 53 of 80)</text>
+<text x="210" y="96" font-size="14" text-anchor="end" fill="#1d2933">Argument clarity</text>
+<rect x="222" y="82" width="336.0" height="14" fill="#9AA5B1"/>
+<text x="564.0" y="94" font-size="12" fill="#1d2933">6</text>
+<rect x="222" y="99" width="392.0" height="14" fill="#1F6FB2"/>
+<text x="620.0" y="111" font-size="12" fill="#1d2933">7</text>
+<text x="210" y="142" font-size="14" text-anchor="end" fill="#1d2933">Conceptual precision</text>
+<rect x="222" y="128" width="280.0" height="14" fill="#9AA5B1"/>
+<text x="508.0" y="140" font-size="12" fill="#1d2933">5</text>
+<rect x="222" y="145" width="392.0" height="14" fill="#1F6FB2"/>
+<text x="620.0" y="157" font-size="12" fill="#1d2933">7</text>
+<text x="210" y="188" font-size="14" text-anchor="end" fill="#1d2933">Internal consistency</text>
+<rect x="222" y="174" width="224.0" height="14" fill="#9AA5B1"/>
+<text x="452.0" y="186" font-size="12" fill="#1d2933">4</text>
+<rect x="222" y="191" width="336.0" height="14" fill="#1F6FB2"/>
+<text x="564.0" y="203" font-size="12" fill="#1d2933">6</text>
+<text x="210" y="234" font-size="14" text-anchor="end" fill="#1d2933">Evidence and citations</text>
+<rect x="222" y="220" width="280.0" height="14" fill="#9AA5B1"/>
+<text x="508.0" y="232" font-size="12" fill="#1d2933">5</text>
+<rect x="222" y="237" width="336.0" height="14" fill="#1F6FB2"/>
+<text x="564.0" y="249" font-size="12" fill="#1d2933">6</text>
+<text x="210" y="280" font-size="14" text-anchor="end" fill="#1d2933">Domain coverage</text>
+<rect x="222" y="266" width="280.0" height="14" fill="#9AA5B1"/>
+<text x="508.0" y="278" font-size="12" fill="#1d2933">5</text>
+<rect x="222" y="283" width="336.0" height="14" fill="#1F6FB2"/>
+<text x="564.0" y="295" font-size="12" fill="#1d2933">6</text>
+<text x="210" y="326" font-size="14" text-anchor="end" fill="#1d2933">Objections and replies</text>
+<rect x="222" y="312" width="336.0" height="14" fill="#9AA5B1"/>
+<text x="564.0" y="324" font-size="12" fill="#1d2933">6</text>
+<rect x="222" y="329" width="392.0" height="14" fill="#1F6FB2"/>
+<text x="620.0" y="341" font-size="12" fill="#1d2933">7</text>
+<text x="210" y="372" font-size="14" text-anchor="end" fill="#1d2933">Practical usefulness</text>
+<rect x="222" y="358" width="280.0" height="14" fill="#9AA5B1"/>
+<text x="508.0" y="370" font-size="12" fill="#1d2933">5</text>
+<rect x="222" y="375" width="392.0" height="14" fill="#1F6FB2"/>
+<text x="620.0" y="387" font-size="12" fill="#1d2933">7</text>
+<text x="210" y="418" font-size="14" text-anchor="end" fill="#1d2933">Prose and structure</text>
+<rect x="222" y="404" width="448.0" height="14" fill="#9AA5B1"/>
+<text x="676.0" y="416" font-size="12" fill="#1d2933">8</text>
+<rect x="222" y="421" width="392.0" height="14" fill="#1F6FB2"/>
+<text x="620.0" y="433" font-size="12" fill="#1d2933">7</text>
+<text x="20" y="474" font-size="11" fill="#5b6770">Scores from one reviewer model in one blind run; see 05-blind-review.md. Labels were randomised before scoring.</text>
+</svg>

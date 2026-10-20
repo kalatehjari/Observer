@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="714" viewBox="0 0 900 714" role="img" font-family="Helvetica, Arial, sans-serif">
+<title>Observer lens concept weights</title>
+<desc>Key concepts from each of the five lenses, with weights from 0 to 1, as recorded in the Observer analysis of the draft.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="bold" fill="#1d2933">Observer analysis of the draft: key concept weights by lens (0 to 1)</text>
+<text x="20" y="76" font-size="14" font-weight="bold" fill="#1d2933">Analytical lens</text>
+<text x="330" y="97" font-size="12.5" text-anchor="end" fill="#1d2933">Internal consistency of Table 1 with the asymmetry rule</text>
+<rect x="342" y="87" width="387.0" height="13" fill="#1F6FB2"/>
+<text x="735.0" y="97" font-size="12" fill="#1d2933">0.90</text>
+<text x="330" y="119" font-size="12.5" text-anchor="end" fill="#1d2933">Boundary between grades 2 and 3</text>
+<rect x="342" y="109" width="301.0" height="13" fill="#1F6FB2"/>
+<text x="649.0" y="119" font-size="12" fill="#1d2933">0.70</text>
+<text x="330" y="141" font-size="12.5" text-anchor="end" fill="#1d2933">Verifiability of references</text>
+<rect x="342" y="131" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="141" font-size="12" fill="#1d2933">0.60</text>
+<text x="330" y="163" font-size="12.5" text-anchor="end" fill="#1d2933">Empirical support for the triage claim</text>
+<rect x="342" y="153" width="215.0" height="13" fill="#1F6FB2"/>
+<text x="563.0" y="163" font-size="12" fill="#1d2933">0.50</text>
+<text x="330" y="185" font-size="12.5" text-anchor="end" fill="#1d2933">Balance of domain coverage</text>
+<rect x="342" y="175" width="172.0" height="13" fill="#1F6FB2"/>
+<text x="520.0" y="185" font-size="12" fill="#1d2933">0.40</text>
+<text x="20" y="208" font-size="14" font-weight="bold" fill="#1d2933">Creative lens</text>
+<text x="330" y="229" font-size="12.5" text-anchor="end" fill="#1d2933">Authority as separable permissions</text>
+<rect x="342" y="219" width="365.5" height="13" fill="#1F6FB2"/>
+<text x="713.5" y="229" font-size="12" fill="#1d2933">0.85</text>
+<text x="330" y="251" font-size="12.5" text-anchor="end" fill="#1d2933">Reversibility as the organising axis</text>
+<rect x="342" y="241" width="301.0" height="13" fill="#1F6FB2"/>
+<text x="649.0" y="251" font-size="12" fill="#1d2933">0.70</text>
+<text x="330" y="273" font-size="12.5" text-anchor="end" fill="#1d2933">Two-key rule for adverse acts</text>
+<rect x="342" y="263" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="273" font-size="12" fill="#1d2933">0.60</text>
+<text x="330" y="295" font-size="12.5" text-anchor="end" fill="#1d2933">Envelope protection for grade 3</text>
+<rect x="342" y="285" width="215.0" height="13" fill="#1F6FB2"/>
+<text x="563.0" y="295" font-size="12" fill="#1d2933">0.50</text>
+<text x="20" y="318" font-size="14" font-weight="bold" fill="#1d2933">Critical lens</text>
+<text x="330" y="339" font-size="12.5" text-anchor="end" fill="#1d2933">Unexamined asymmetry premise</text>
+<rect x="342" y="329" width="387.0" height="13" fill="#1F6FB2"/>
+<text x="735.0" y="339" font-size="12" fill="#1d2933">0.90</text>
+<text x="330" y="361" font-size="12.5" text-anchor="end" fill="#1d2933">Unsourced claim in Section 6.1</text>
+<rect x="342" y="351" width="301.0" height="13" fill="#1F6FB2"/>
+<text x="649.0" y="361" font-size="12" fill="#1d2933">0.70</text>
+<text x="330" y="383" font-size="12.5" text-anchor="end" fill="#1d2933">Envelope reliability under change</text>
+<rect x="342" y="373" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="383" font-size="12" fill="#1d2933">0.60</text>
+<text x="330" y="405" font-size="12.5" text-anchor="end" fill="#1d2933">Access costs in low-resource settings</text>
+<rect x="342" y="395" width="215.0" height="13" fill="#1F6FB2"/>
+<text x="563.0" y="405" font-size="12" fill="#1d2933">0.50</text>
+<text x="330" y="427" font-size="12.5" text-anchor="end" fill="#1d2933">Status of the ICRC position</text>
+<rect x="342" y="417" width="129.0" height="13" fill="#1F6FB2"/>
+<text x="477.0" y="427" font-size="12" fill="#1d2933">0.30</text>
+<text x="20" y="450" font-size="14" font-weight="bold" fill="#1d2933">Systems-thinking lens</text>
+<text x="330" y="471" font-size="12.5" text-anchor="end" fill="#1d2933">Authority creep through eroding override</text>
+<rect x="342" y="461" width="365.5" height="13" fill="#1F6FB2"/>
+<text x="713.5" y="471" font-size="12" fill="#1d2933">0.85</text>
+<text x="330" y="493" font-size="12.5" text-anchor="end" fill="#1d2933">Label loops from enforcement</text>
+<rect x="342" y="483" width="301.0" height="13" fill="#1F6FB2"/>
+<text x="649.0" y="493" font-size="12" fill="#1d2933">0.70</text>
+<text x="330" y="515" font-size="12.5" text-anchor="end" fill="#1d2933">Detection delay for collective harms</text>
+<rect x="342" y="505" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="515" font-size="12" fill="#1d2933">0.60</text>
+<text x="330" y="537" font-size="12.5" text-anchor="end" fill="#1d2933">Deskilling loop with reviewer capacity</text>
+<rect x="342" y="527" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="537" font-size="12" fill="#1d2933">0.60</text>
+<text x="20" y="560" font-size="14" font-weight="bold" fill="#1d2933">Pragmatic lens</text>
+<text x="330" y="581" font-size="12.5" text-anchor="end" fill="#1d2933">Operational tests for the five conditions</text>
+<rect x="342" y="571" width="387.0" height="13" fill="#1F6FB2"/>
+<text x="735.0" y="581" font-size="12" fill="#1d2933">0.90</text>
+<text x="330" y="603" font-size="12.5" text-anchor="end" fill="#1d2933">Certification and re-certification rules</text>
+<rect x="342" y="593" width="301.0" height="13" fill="#1F6FB2"/>
+<text x="649.0" y="603" font-size="12" fill="#1d2933">0.70</text>
+<text x="330" y="625" font-size="12.5" text-anchor="end" fill="#1d2933">Costs and reviewer capacity</text>
+<rect x="342" y="615" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="625" font-size="12" fill="#1d2933">0.60</text>
+<text x="330" y="647" font-size="12.5" text-anchor="end" fill="#1d2933">Existing legal hooks</text>
+<rect x="342" y="637" width="258.0" height="13" fill="#1F6FB2"/>
+<text x="606.0" y="647" font-size="12" fill="#1d2933">0.60</text>
+<text x="20" y="700" font-size="11" fill="#5b6770">Weights are judgements made by the lens, not measurements. The same model produced all five lenses.</text>
+</svg>
