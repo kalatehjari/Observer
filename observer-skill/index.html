@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Observer: a multi-lens reasoning skill for Claude</title>
+<meta name="description" content="Observer for Claude: five cognitive lenses, an audit of supplied material and a synthesis with confidence scores, refined over ten tested cycles.">
+<link rel="canonical" href="https://kalatehjari.github.io/Observer/observer-skill/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Observer">
+<meta property="og:title" content="Observer: a multi-lens reasoning skill for Claude">
+<meta property="og:description" content="Observer for Claude: five cognitive lenses, an audit of supplied material and a synthesis with confidence scores, refined over ten tested cycles.">
+<meta property="og:url" content="https://kalatehjari.github.io/Observer/observer-skill/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Observer: a multi-lens reasoning skill for Claude", "url": "https://kalatehjari.github.io/Observer/observer-skill/", "isPartOf": {"@type": "WebSite", "name": "Observer", "url": "https://kalatehjari.github.io/Observer/"}, "dateModified": "2026-10-23"}</script>
+</head>
+<body>
+<header class="site"><div class="inner">
+<a class="brand" href="./">Observer skill</a>
+<nav><a href="skill.html">The skill</a><a href="self-improvement.html">Self-improvement</a><a href="graded-authority-for-ai.html">Case-study paper</a><a href="https://github.com/kalatehjari/Observer">GitHub</a></nav>
+</div></header>
+<main>
+<h1 id="observer-a-multi-lens-reasoning-skill-for-claude">Observer: a multi-lens reasoning skill for Claude</h1>
+<p>Observer is a method for reasoning through complex, ambiguous or high-stakes questions from several perspectives at once. Here it is packaged as a skill for Claude. It runs five cognitive lenses, audits any material the person supplies, and ends with a Higher-Order Observer synthesis that gives one recommendation with confidence scores and a transparency report. It comes from the <a href="https://kalatehjari.github.io/Observer/">Observer framework</a> for AI-augmented reasoning.</p>
+<h2 id="the-skill">The skill</h2>
+<ul>
+<li><a href="skill.html">Read version 1.10 of the skill</a>, or get its SKILL.md file from <a href="https://github.com/kalatehjari/Observer/tree/main/.claude/skills/observer-multi-lens-reasoning">GitHub</a>.</li>
+<li>An analysis frames the question and runs five lenses: analytical, creative, critical, systems-thinking and pragmatic. Each lens gives a reasoning chain, weighted concepts and a mind map.</li>
+<li>When the person supplies material, an audit checks it for conflicts, gaps and doubtful claims, quoting it exactly.</li>
+<li>The synthesis finds where the lenses converge and where they productively diverge, and gives one recommendation with confidence scores and a transparency report.</li>
+<li>The skill keeps the person in charge. It labels evidence, assumptions and its own knowledge, never invents sources, and names values choices as values choices.</li>
+</ul>
+<h2 id="how-it-was-tested-and-improved">How it was tested and improved</h2>
+<p>Version 1.10 is the result of ten cycles of self-improvement, run from 21 to 23 October 2026. In each cycle the skill mapped its own process, critiqued it with its own method and revised itself. A blind test on a fixed paper checked seven of the revisions, and the final version was also checked on a held-out text.</p>
+<ul>
+<li>The audit step, added in the first cycle, raised the test score from 11.5 to an average of 15.4 out of 19 across the seven tested versions. It did so mainly by catching internal inconsistencies.</li>
+<li>Exact quotation rose from about 90 percent to between 98.7 and 100 percent.</li>
+<li>On the held-out text, the final version scored 10.5 out of 12, against 10.0 for the original.</li>
+<li>The later cycles made the output more structured and easier to check, but did not measurably improve detection.</li>
+</ul>
+<p><a href="self-improvement.html">Read the full self-improvement summary</a>, with every score and its limits.</p>
+<h2 id="the-case-study-paper">The case-study paper</h2>
+<p>The test material was an ethics paper on whether AI systems should hold decision authority over medicine, military force and economic allocation. An AI agent wrote it, and it was then revised with the Observer method. <a href="graded-authority-for-ai.html">Read the paper</a>, or download it as a <a href="downloads/graded-authority-for-ai.pdf">PDF</a> or a <a href="downloads/graded-authority-for-ai.docx">Word file</a>. It is a test object, not a finished paper, and its known defects are recorded in the case study.</p>
+<h2 id="records-on-github">Records on GitHub</h2>
+<ul>
+<li><a href="https://github.com/kalatehjari/Observer/tree/main/case-studies/ai-authority-sensitive-decisions">Case study: AI authority over sensitive decisions</a>: the draft, two Observer passes, a blind review and a comparison of the passes.</li>
+<li><a href="https://github.com/kalatehjari/Observer/tree/main/case-studies/observer-self-improvement">Case study: Observer self-improvement</a>: the protocol, the scoring rubric, and every cycle's candidate, tests, scores and report.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The tests used one paper and one held-out text, both on the same subject. Each version ran once and was scored by one scorer, and every agent was a Claude model, so their agreement is not independent evidence. The skill supports a decision and does not make it. For medical, legal, financial or safety-critical questions, its analysis is not professional advice.</p>
+
+</main>
+<footer class="site"><div class="inner">
+<p>Part of <a href="https://github.com/kalatehjari/Observer">kalatehjari/Observer</a>, a multi-stream meta-cognitive framework for AI-augmented reasoning, whose main page is <a href="https://kalatehjari.github.io/Observer/">here</a>. The skill is released under the MIT licence. These pages were last updated on 23 October 2026.</p>
+</div></footer>
+</body>
+</html>

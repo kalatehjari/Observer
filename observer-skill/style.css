@@ -1,0 +1,28 @@
+:root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --accent: #1f4e79; --line: #d0d7de; --soft: #f6f8fa; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --accent: #79b8ff; --line: #30363d; --soft: #161b22; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 Georgia, Cambria, "Times New Roman", serif; }
+header.site, footer.site, .note, table, nav { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+header.site { border-bottom: 1px solid var(--line); }
+header.site .inner, main, footer.site .inner { max-width: 46rem; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+header.site .inner { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1.2rem; padding-top: .9rem; padding-bottom: .9rem; }
+header.site a.brand { font-weight: 700; font-size: 1.05rem; color: var(--fg); text-decoration: none; margin-right: auto; }
+header.site nav a { color: var(--accent); text-decoration: none; font-size: .95rem; margin-right: 1rem; }
+header.site nav a:last-child { margin-right: 0; }
+main { padding-top: 1.5rem; padding-bottom: 3rem; overflow-wrap: break-word; }
+h1 { font-size: 1.85rem; line-height: 1.25; margin: .4rem 0 1rem; }
+h2 { font-size: 1.4rem; line-height: 1.3; margin: 2.1rem 0 .6rem; }
+h3 { font-size: 1.15rem; margin: 1.6rem 0 .5rem; }
+a { color: var(--accent); }
+.note { background: var(--soft); border-left: 4px solid var(--accent); padding: .7rem 1rem; margin: 1rem 0 1.6rem; font-size: .95rem; }
+.note p { margin: .4rem 0; }
+.downloads a { margin-right: .9rem; }
+table { border-collapse: collapse; display: block; overflow-x: auto; max-width: 100%; font-size: .86rem; line-height: 1.45; margin: 1rem 0 1.4rem; }
+th, td { border: 1px solid var(--line); padding: .4rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+pre { background: var(--soft); padding: 1rem; overflow-x: auto; white-space: pre-wrap; font-size: .8rem; line-height: 1.5; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+.skill-text { border-top: 1px solid var(--line); margin-top: 1.5rem; }
+footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+footer.site .inner { padding-top: .8rem; padding-bottom: 2rem; }

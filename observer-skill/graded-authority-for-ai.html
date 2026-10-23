@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graded Authority for AI over Sensitive Human Matters (Observer case-study paper)</title>
+<meta name="description" content="An AI-written ethics paper on when AI may hold decision authority in medicine, military force and the economy, revised with the Observer method. A test object.">
+<link rel="canonical" href="https://kalatehjari.github.io/Observer/observer-skill/graded-authority-for-ai.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Observer">
+<meta property="og:title" content="Graded Authority for AI over Sensitive Human Matters (Observer case-study paper)">
+<meta property="og:description" content="An AI-written ethics paper on when AI may hold decision authority in medicine, military force and the economy, revised with the Observer method. A test object.">
+<meta property="og:url" content="https://kalatehjari.github.io/Observer/observer-skill/graded-authority-for-ai.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Graded Authority for AI over Sensitive Human Matters", "alternativeHeadline": "Graded Authority for AI over Sensitive Human Matters: A Tiered Account for Medicine, Military Force and the Economy", "url": "https://kalatehjari.github.io/Observer/observer-skill/graded-authority-for-ai.html", "datePublished": "2026-10-23", "author": {"@type": "Organization", "name": "Observer case study"}, "isPartOf": {"@type": "WebSite", "name": "Observer", "url": "https://kalatehjari.github.io/Observer/"}, "encoding": [{"@type": "MediaObject", "contentUrl": "https://kalatehjari.github.io/Observer/observer-skill/downloads/graded-authority-for-ai.pdf", "encodingFormat": "application/pdf"}]}</script>
+</head>
+<body>
+<header class="site"><div class="inner">
+<a class="brand" href="./">Observer skill</a>
+<nav><a href="skill.html">The skill</a><a href="self-improvement.html">Self-improvement</a><a href="graded-authority-for-ai.html">Case-study paper</a><a href="https://github.com/kalatehjari/Observer">GitHub</a></nav>
+</div></header>
+<main>
+<h1 id="graded-authority-for-ai-over-sensitive-human-matters-a-tiered-account-for-medicine-military-force-and-the-economy">Graded Authority for AI over Sensitive Human Matters: A Tiered Account for Medicine, Military Force and the Economy</h1>
+<div class="note">
+<p><strong>About this paper.</strong> An AI agent wrote this paper as the test material for an Observer case study, and it was then revised with the Observer method. It is a test object, not a finished or peer-reviewed paper. Its known defects are recorded in the case study and were left in place on purpose, so that the comparisons stay honest.</p>
+<p class="downloads">Download: <a href="downloads/graded-authority-for-ai.pdf">PDF</a> <a href="downloads/graded-authority-for-ai.docx">Word</a> <a href="https://github.com/kalatehjari/Observer/blob/main/case-studies/ai-authority-sensitive-decisions/03-enhanced-paper.md">Markdown</a> <a href="https://github.com/kalatehjari/Observer/tree/main/case-studies/ai-authority-sensitive-decisions">The case study</a></p>
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p>AI systems are increasingly placed inside decisions about health, life and death, liberty and livelihood. This paper asks whether such systems should hold decision authority over these matters, and on what terms. It distinguishes five grades of authority, from information to autonomous execution, and argues that AI should not hold final authority over determinations about particular persons in medicine, military force or the economy. Bounded delegation is defensible for narrow functions whose limits humans set in advance and can enforce with a stop. An asymmetry premise governs direction: where a wrongful adverse decision is harder to reverse than a wrongful favourable one, automated systems may be given more authority over favourable decisions than over adverse ones. Authority is licensed only when five conditions hold: answerability, contestability, the right target, real override and bounded delegation. The account yields domain-specific grade ceilings, a test for each condition, and triggers for downgrading authority when a deployment drifts.</p>
+<h2 id="1-introduction">1 Introduction</h2>
+<p>Hospitals rank patients for scarce beds and specialist review. Armed forces use systems that classify objects and people faster than staff can check them. Public agencies score benefit claims and flag families for fraud review. Lenders use models to refuse credit, and trading systems act on prices in milliseconds. In each case the question is no longer whether an algorithm informs a decision, but whether it may make one.</p>
+<p>This paper defends a clear position. AI systems should not hold final decision authority over determinations about particular persons in medicine, military force or the economy. They may hold bounded authority: over narrow executional tasks whose limits humans set in advance, over steps that only escalate or protect, and, in some lending and administrative settings, over favourable decisions. Any such grant must meet five conditions, and its strength must track the stakes.</p>
+<p>The aim is practical as well as argumentative. The paper is written for people who must decide whether a particular deployment may act on its own: hospital governance committees, procurement officers, regulators and ethics boards. For that reason Section 5 gives tests and certification rules, not only principles, and Section 6 answers the objections such readers are most likely to raise.</p>
+<p>The argument has three steps. Authority requires an answerable agent and a route of challenge, which an AI system cannot supply alone. The characteristic failures of automated decision-making, such as proxy labels, opacity and complacent oversight, are structural and must be designed against. The right design is therefore a tiered allocation, not a choice between a human deciding and a machine deciding. Section 2 sets out the grades, Section 3 gives one case per domain, Section 4 examines the stakes, Section 5 states the tiers and their tests, Section 6 answers six objections and Section 7 makes recommendations. Section 8 states the limits of the account.</p>
+<h2 id="2-what-authority-means">2 What "authority" means</h2>
+<p>To say that a system has decision authority is to say that its output settles a matter others must accept, and that someone can be held to account for it. Computing an answer is not enough. Authority presupposes an agent who can give reasons, be questioned and be corrected. The paper uses a five-grade scale to show how far a system's output may settle outcomes before a human acts on it.</p>
+<ul>
+<li><strong>Grade 0, information.</strong> The system reports or summarises data and proposes no option.</li>
+<li><strong>Grade 1, advice.</strong> The system recommends options with reasons. A human selects and remains the decision-maker of record.</li>
+<li><strong>Grade 2, default with override.</strong> The system's option takes effect for each case unless a human actively overrides it within a set window.</li>
+<li><strong>Grade 3, delegated execution.</strong> The system acts within limits fixed in advance by accountable humans, who monitor the envelope and can halt it, but do not approve each act.</li>
+<li><strong>Grade 4, autonomous execution.</strong> The system acts with no timely human veto, and its limits are absent or set by the system itself.</li>
+</ul>
+<p>Authority in the relevant sense is grades 2 to 4. Grades 0 and 1 are not authority, but advice shapes what humans do, and the failures discussed in Section 4 arise there too.</p>
+<p>Grades 2 and 3 differ in the unit of control, and the difference can be stated as a test. Grade 2 is controlled case by case: the system's option stands unless a human overrides it in the window. Grade 3 is controlled by the envelope: limits are fixed before operation, actions are reviewed in patterns, and a human can stop the system. If a human must be able to change an individual outcome before it takes effect, the system is at grade 2 or below. If the human can change only the envelope or stop the system, it is at grade 3.</p>
+<p>It helps to treat authority as a bundle of separable permissions: to escalate a case, to prioritise it, to approve it, to deny it, to act on it and to stop. A deployment is assessed permission by permission, and the grade of a decision class is set by the most consequential permission it carries. A system may therefore be trusted to escalate a case at grade 2 while being refused any power to deny one.</p>
+<p>A decision about a person means any determination that changes a person's treatment, legal or social status, liberty, money or access to a service. Escalation that changes only a queue position is not such a determination, but it can shape one, which is why Section 5 treats it separately.</p>
+<h2 id="3-the-three-domains">3 The three domains</h2>
+<h3 id="31-medicine">3.1 Medicine</h3>
+<p>Consider a commercial algorithm that health systems used to identify patients for additional care management, a scarce programme of nurse outreach and extra attention. It predicted future health-care costs and used them as the measure of need. Because, at the same level of illness, less had been spent on Black patients, the proxy systematically under-identified them (Obermeyer et al., 2019). The algorithm was accurate about its label and wrong about the thing the programme was for. What is at stake is the allocation of attention among people whose health depends on it, and the trust of communities whose needs were misread. One influential view holds that human and artificial intelligence should converge, with clinicians augmented rather than replaced (Topol, 2019). That view does not settle who holds authority when the two disagree.</p>
+<h3 id="32-military-force">3.2 Military force</h3>
+<p>The case below is illustrative. It is a policy-level scenario, not a description of any system. A commander authorises a system to engage targets within a defined area for a fixed period, because communications are expected to be degraded and approval could not be obtained in time. The area contains combatants, civilians and people who have surrendered. No one approves each engagement, and the commander's authorisation is the last human act before the consequences. What is at stake is whether persons can be distinguished, whether force is proportionate, and whether anyone can answer for an unlawful killing.</p>
+<p>The ICRC recommends prohibiting unpredictable autonomous weapon systems and systems designed or used to target persons. It recommends restricting others through limits on target types, duration, geographic scope and scale, with human control and judgement retained (ICRC, 2021). The recommendation is not binding law, and states hold differing positions. The wider debate is surveyed at book length (Scharre, 2018). The case concerns who decides whether a person is killed, not how any system works.</p>
+<h3 id="33-the-economy">3.3 The economy</h3>
+<p>The Australian Robodebt scheme is a documented welfare case. It raised debts automatically by comparing averaged annual income data with fortnightly income reported by recipients. Debt notices were generated at scale, and the burden of showing that a debt was wrong fell on the recipient. Its consequences were examined in detail by a royal commission (Royal Commission into the Robodebt Scheme, 2023). What is at stake is a person's income and standing, imposed by an adverse decision that no official had individually reviewed, against people least able to contest it.</p>
+<p>Credit scoring follows the same logic. A refusal can exclude a person from housing, and the model's reasons are often unavailable to the applicant. Lending decisions are typically made in high volume, which makes individual review costly and turns the design question into one of what review is possible at scale. Automated market interventions raise a different stake. The harm is collective and fast, and no single person can answer for it. Section 5 sets the tiers for each.</p>
+<h2 id="4-ethical-stakes">4 Ethical stakes</h2>
+<h3 id="41-accountability-gaps">4.1 Accountability gaps</h3>
+<p>When designers, deployers and operators cannot predict a system's behaviour, the ordinary chain of responsibility breaks. Learning automata can act in ways their designers cannot foresee, so ordinary ascriptions of responsibility fail (Matthias, 2004). Applied to autonomous weapons, the worry is that a war crime committed by such a system may leave no one to whom blame can properly attach (Sparrow, 2007). Santoni de Sio and van den Hoven (2018) argue that meaningful human control requires that the system track the relevant reasons of the humans responsible for it, and that its behaviour be traceable to a human who understands it and can act on that understanding. The paper treats traceability as the minimal test of answerability. A gap is closed by assigning named accountability before deployment, not by holding the system responsible after harm.</p>
+<h3 id="42-contestability-and-dignity">4.2 Contestability and dignity</h3>
+<p>A person subject to a consequential decision is entitled to know its basis and to have it reviewed by someone who can reverse it, whether or not the decision is accurate. To be determined by a process that cannot take one's situation into account is to be treated as an object of calculation rather than as a subject with reasons. The cases Eubanks (2018) documents show how automated tools in public services can profile and punish poor people, often with no one available to hear a challenge. In lethal decisions the requirement is sharpest, because the person judged cannot contest the decision at all.</p>
+<h3 id="43-bias-and-fairness">4.3 Bias and fairness</h3>
+<p>Automated systems inherit the structure of their data and labels. A proxy can carry historical inequality into a decision while appearing neutral (Obermeyer et al., 2019). Fairness is a choice of target and metric, and no metric is neutral. A system can be highly accurate against its training label and systematically wrong about the outcome that matters. Authority therefore requires that the target and fairness criteria be fixed before deployment, validated against the outcome the decision is for, and audited for differential error across groups.</p>
+<h3 id="44-opacity">4.4 Opacity</h3>
+<p>Interpretability has no single meaning and must be defined relative to the task for which an explanation is needed (Doshi-Velez and Kim, 2017). An explanation that satisfies a data scientist may not let a patient, claimant or borrower identify an error and contest it. Opacity also disarms the professional who must decide whether to trust the system. Without reasons, an override rests on intuition, which is a weak safeguard. Explanation is therefore a precondition of contestation and of meaningful override.</p>
+<h3 id="45-automation-bias-and-deskilling">4.5 Automation bias and deskilling</h3>
+<p>Supervisors of automated systems tend to over-rely on them, and they monitor less well as reliability rises. Reviews of the human-factors literature treat this as a problem of attention (Parasuraman and Manzey, 2010). Automation also removes the practice that keeps operators skilled, leaving them with rare, difficult cases and a monitoring task that humans perform poorly (Bainbridge, 1983). The person is least prepared exactly when the system fails. This affects every grade above advice, and a reviewer who never disagrees exercises no real authority.</p>
+<h3 id="46-feedback-drift-and-detection">4.6 Feedback, drift and detection</h3>
+<p>Two dynamics are missing from a static account of grades. The first is authority creep. When review windows are shortened to save time, fewer cases reach reviewers, reviewers lose practice and override less, and the effective grade rises toward grade 4 without any formal change. The second is the label loop. In welfare and fraud systems, flagged cases lead to investigations, and the findings become training labels, so the model learns its own enforcement pattern. A third dynamic concerns detection. For collective harms, such as market failures or some military effects, the delay between harm and detection is longer, which weakens the requirement that errors be correctable.</p>
+<p>These are inferences from the structure of the systems described above, not findings from measured cases. The paper treats them as hypotheses that deployments should monitor, and Section 5 turns them into downgrade triggers.</p>
+<h2 id="5-a-tiered-account">5 A tiered account</h2>
+<p>Authority at grades 2 to 4 is licensed only when five conditions hold. Table 2 states each condition with a proposed test, the body that would certify it and a proposed re-check interval. The tests are designed so that a hospital committee, procurement office or regulator can apply them without further philosophical work. The thresholds are for each certifying body to set, because the evidence needed to justify numerical values does not yet exist.</p>
+<p><strong>Table 2. Conditions, tests and certification (proposed)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>Test</th>
+<th>Certified by</th>
+<th>Re-check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Answerability</td>
+<td>A named institution and a named person hold design, deployment and outcome responsibility, and can correct or withdraw the system</td>
+<td>Governing body of the deploying organisation</td>
+<td>At each material change, and annually</td>
+</tr>
+<tr class="even">
+<td>Contestability</td>
+<td>The affected person can obtain the basis of the decision in usable terms, and a review by someone who can reverse it, within a stated time</td>
+<td>Independent oversight body or regulator</td>
+<td>At each change to the review process, and annually</td>
+</tr>
+<tr class="odd">
+<td>Right target</td>
+<td>Performance is validated against the outcome the decision is for, and error rates are published by subgroup</td>
+<td>Independent auditor using criteria fixed in advance</td>
+<td>Before deployment, and at each retraining</td>
+</tr>
+<tr class="even">
+<td>Real override</td>
+<td>Reviewers have the time, information and competence to disagree, and their disagreement is measured with seeded errors</td>
+<td>Internal audit using sampled cases</td>
+<td>Quarterly, and after any change to review windows</td>
+</tr>
+<tr class="odd">
+<td>Bounded delegation</td>
+<td>Limits are written before operation, enforced by an automatic stop, and tested in simulated and live conditions</td>
+<td>Safety authority for the domain</td>
+<td>Before each new envelope, and at each material change</td>
+</tr>
+</tbody>
+</table>
+<p>The asymmetry premise governs direction. It holds that, where a wrongful adverse decision is harder to reverse than a wrongful favourable one, automated systems may be given more authority over favourable decisions than over adverse ones. The premise is a values choice about the relative weight of error types, and it carries an empirical condition. It should be reversed for any domain in which evidence shows that wrongful approvals cause more irreversible harm, including harm to third parties, than wrongful refusals cause to the people refused. Where the ordering is not supported at all, the default is grade 1. Escalation is treated separately. A flag that moves a case up a queue costs little if it is wrong, and a human's judgement still settles the outcome.</p>
+<p>Table 1 gives the grade ceilings. A ceiling is the highest grade a decision class may take, given the conditions. A deployment is licensed for less than its ceiling wherever its conditions are weakly met. The ceilings are design judgements, not empirical findings.</p>
+<p><strong>Table 1. Grade ceilings by domain and decision class (proposed)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Decision class</th>
+<th>Grade ceiling</th>
+<th>Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medicine</td>
+<td>Escalating a case for urgent clinician review</td>
+<td>2</td>
+<td>Clinician can override within the workflow; reviews sampled for seeded errors</td>
+</tr>
+<tr class="even">
+<td>Medicine</td>
+<td>Deprioritising a patient or withholding scarce care</td>
+<td>1</td>
+<td>Clinician decides, with reasons recorded</td>
+</tr>
+<tr class="odd">
+<td>Medicine</td>
+<td>Individual treatment selection</td>
+<td>1</td>
+<td>Clinician and patient decide</td>
+</tr>
+<tr class="even">
+<td>Medicine</td>
+<td>Dosing within clinician-set limits</td>
+<td>3</td>
+<td>Limits fixed in advance; stop available</td>
+</tr>
+<tr class="odd">
+<td>Medicine</td>
+<td>Automatic protective stop that moves the system to a defined safe state</td>
+<td>4</td>
+<td>Narrow and reversible; removes no entitlement; clinician can countermand at once</td>
+</tr>
+<tr class="even">
+<td>Military</td>
+<td>Recommending the engagement of persons</td>
+<td>1</td>
+<td>Human decision for each engagement</td>
+</tr>
+<tr class="odd">
+<td>Military</td>
+<td>Defensive engagement of incoming munitions, not persons</td>
+<td>3</td>
+<td>Human-set envelope; human on the loop; stop available</td>
+</tr>
+<tr class="even">
+<td>Economy</td>
+<td>Favourable approvals, such as low-cost approvals</td>
+<td>2</td>
+<td>Audit; errors correctable; asymmetry premise checked for the domain</td>
+</tr>
+<tr class="odd">
+<td>Economy</td>
+<td>Credit refusals</td>
+<td>1</td>
+<td>Named human decision-maker of record; grade 2 only under a statute that sets review capacity and audit</td>
+</tr>
+<tr class="even">
+<td>Economy</td>
+<td>Welfare denials, debt raising and sanctions</td>
+<td>1</td>
+<td>Named human decision-maker of record</td>
+</tr>
+<tr class="odd">
+<td>Economy</td>
+<td>Pre-committed market rules, such as halts and rate limits</td>
+<td>3</td>
+<td>Parameters set by public authority; kill switch</td>
+</tr>
+<tr class="even">
+<td>Economy</td>
+<td>Discretionary AI market interventions</td>
+<td>1</td>
+<td>Public justification; no unilateral action</td>
+</tr>
+</tbody>
+</table>
+<p>No domain licenses grade 4 for decisions about persons, with one exception. A protective stop may run at grade 4 if it moves a system to a defined safe state, removes no entitlement and can be countermanded by a clinician at once. Grade 3 suits small decision spaces with limits set in advance and a reliable stop. Grade 2 suits favourable or cheaply corrected outcomes, or review that fits the workflow. Grade 1 governs individual adverse determinations, value-laden allocation and force against persons.</p>
+<p>A deployment is downgraded by one grade when a trigger is met, until its certifying body re-certifies it. The triggers are a review window shortened without audit; an override rate that falls to near zero over a sustained period without an audit explanation; a subgroup error gap above a threshold set in advance; a sampled reviewer who cannot state the reason for a decision; and any change to the outcome label. These triggers are the working form of the drift risks in Section 4.6.</p>
+<p>Market mechanisms turn on a different consideration. They act faster than case-by-case approval, and their harms are collective. Pre-committed public rules, with halts and rate limits, meet the conditions at grade 3. Discretionary interventions, in which a system chooses when and how to act on prices, do not. Under current institutions no one can answer for a collective harm produced by a learned discretionary policy, so the answerability condition fails.</p>
+<h2 id="6-objections-and-replies">6 Objections and replies</h2>
+<h3 id="61-the-lives-saved-argument">6.1 The lives-saved argument</h3>
+<p>If an AI triage system saves more lives on average than clinicians do, withholding authority from it costs lives. The argument has force, and the paper accepts part of it. Where authority is confined to validated execution within limits, it supports grade 3 or 4 use, as in dosing or protective stops. On its own it does not support authority over deprioritisation or the allocation of scarce care. Three replies apply.</p>
+<p>First, an average hides distribution. A system that saves more lives overall can still under-serve a subgroup, as the Obermeyer case shows (Obermeyer et al., 2019).</p>
+<p>Second, the argument needs a premise the paper cannot yet supply: that the lives gained by automated prioritisation outweigh the lives lost to its errors, including errors concentrated in particular groups. That is an empirical question, and the framework makes it testable through subgroup audit and the override tests in Section 5. Until it is answered, the lives-saved argument supports augmentation, with escalation and audit, more clearly than it supports authority over who receives care.</p>
+<p>Third, the argument proves too much. If efficiency justified removing review, no appeal would survive. Lives saved are evidence for augmentation, not for authority over persons' fates.</p>
+<h3 id="62-humans-are-biased-too">6.2 Humans are biased too</h3>
+<p>Human decision-makers are biased, and algorithms can be more consistent and more auditable. But the comparison concerns error correction. Human bias is heterogeneous. Different officials err in different ways, and each can be questioned, trained and replaced. Automated bias is uniform and scaled. One flawed label distorts every decision the system makes, and it can hide behind an appearance of objectivity, as the Obermeyer proxy did (Obermeyer et al., 2019). Human bias does not excuse automated bias. Auditing human decisions for disparity is a valuable use of AI, and it fits the grade 1 role of review. The machine should audit the human, not replace the person who answers for the decision.</p>
+<h3 id="63-competitive-pressure">6.3 Competitive pressure</h3>
+<p>If rivals delegate to machines, restraint looks like unilateral disadvantage. The dynamic is real, but the conclusion does not follow. Competitive pressure is a collective action problem, and its proper response is coordinated limits, not each actor surrendering authority. The argument also overstates the need for speed. Speed justifies grade 3 for bounded functions such as defensive envelopes and pre-committed market rules. It does not justify grade 4 for decisions about persons, because a bounded envelope, rather than per-action approval, is what makes speed tolerable. The ICRC's recommendations are a coordinated response of this kind (ICRC, 2021). Competitive pressure can explain why authority is granted. It cannot justify granting it where the conditions fail.</p>
+<h3 id="64-oversight-as-rubber-stamp">6.4 Oversight as rubber stamp</h3>
+<p>The strongest objection is that oversight becomes a formality. If reviewers accept whatever the system proposes, grade 2 collapses into grade 4 with a human's name attached. The concern is well founded. Complacency and automation bias are documented (Parasuraman and Manzey, 2010), and sustained monitoring is a task humans perform poorly (Bainbridge, 1983). The EU's AI Act requires that high-risk systems be designed so that natural persons can effectively oversee them (European Union, 2024), but a legal requirement does not make oversight real.</p>
+<p>The objection is accepted as a design constraint. Grade 2 is permissible only where review fits the workflow, overrides are logged, reviewers are tested with seeded errors, and the drift triggers in Section 5 are monitored. Reviewers should answer for accuracy, not agreement. When these conditions fail, the system drops to grade 1. In high-volume settings where meaningful review is impossible, grade 2 is not defensible, which is why credit refusals sit at grade 1 in Table 1.</p>
+<h3 id="65-third-party-harm">6.5 Third-party harm</h3>
+<p>A wrongful approval can harm people other than the applicant: a borrower who takes on debt they cannot carry, a lender that absorbs losses, or the public that bears the cost of a bad allocation. The asymmetry premise counts mainly the harm to the person affected, so this objection threatens it directly. The reply is that the premise is a values choice with an empirical condition. Third-party harm counts. Where evidence shows that wrongful approvals cause more irreversible harm to others than wrongful refusals cause to applicants, the premise is reversed for that domain, and approvals fall to grade 1. The paper does not claim that the evidence favours its premise in credit. It claims that the premise must be tested before it is used.</p>
+<h3 id="66-low-resource-settings">6.6 Low-resource settings</h3>
+<p>A strict ceiling may withhold benefit from people who would be better served by an imperfect automated service than by none. Where review capacity is absent, the framework could leave a population with slower triage or none. The reply has two parts. First, the conditions are minimal standards, and the tests in Section 5 are proportionate to a deployment's stakes. A low-stakes information service needs fewer of them than a system that decides who receives scarce care. Second, where review capacity is absent, the appropriate response is to fund that capacity or to restrict the system to escalation and information, not to accept grade 2 without review. This is a values trade-off. It accepts slower service in exchange for protection from errors that no one can detect or contest, and the paper states that choice rather than hiding it.</p>
+<h2 id="7-recommendations-and-conclusion">7 Recommendations and conclusion</h2>
+<h3 id="71-recommendations">7.1 Recommendations</h3>
+<ol type="1">
+<li>Require every sensitive deployment to declare its grade and the ceiling for each decision class, and to show before deployment that the five conditions pass their tests (Table 2).</li>
+<li>Apply the asymmetry premise in law and procurement only where it has been checked for the domain. Adverse determinations, including denials, sanctions and debts, need a named human decision-maker of record unless a statute expressly licenses grade 2 with stated review capacity and audit.</li>
+<li>Fix the outcome label and fairness criteria in advance, validate them against the purpose of the decision, and publish subgroup error rates.</li>
+<li>Make override real. Log overrides, set minimum review times, seed reviews with known errors, and treat a near-zero override rate as a signal to investigate, not as proof of accuracy.</li>
+<li>Prohibit delegated authority to select and engage persons with force. Pursue international limits along the lines the ICRC recommends (ICRC, 2021), and keep defensive envelopes against objects bounded and stoppable.</li>
+<li>Keep market automation within public, pre-committed rules with halts and kill switches, and prohibit discretionary AI market interventions without public justification.</li>
+<li>Monitor for authority creep and label loops, and downgrade any deployment that meets a trigger in Section 5 until it is re-certified.</li>
+<li>Budget for the conditions. Audit, logging, seeded review and subgroup reporting have real costs in staff, data and time. A deployment that cannot pay for them should not be granted the grade its ceiling allows.</li>
+</ol>
+<h3 id="72-conclusion">7.2 Conclusion</h3>
+<p>AI systems can carry work that humans set for them, but they cannot carry answerability or hear and reverse a challenge. Authority over sensitive matters therefore stays with humans and institutions, which may delegate bounded functions to machines on conditions. Those conditions, with the asymmetry premise tested before it is used, yield ceilings that are low for decisions about persons and higher for narrow, reversible or envelope-bounded functions. Any future extension of authority should pass one test. Does it preserve someone who can answer for the decision, and a route by which the person affected can be heard?</p>
+<h2 id="8-limitations">8 Limitations</h2>
+<p>The account is normative. It states conditions and tests, but it does not measure how often any deployment meets them, and the ceilings in Table 1 are design judgements. The asymmetry premise is a values choice with an empirical condition that this paper does not establish. The jurisdictions discussed are few: the European Union's AI Act and the Australian Robodebt case. The military discussion is policy-level, and the ICRC position it relies on is a recommendation, not law. Nothing here is legal, medical or military advice. Clinicians, lawyers and military ethicists should test the tiers against their own institutions before use.</p>
+<h2 id="references">References</h2>
+<p>Bainbridge, L. (1983). Ironies of automation. <em>Automatica</em>, 19(6), 775–779.</p>
+<p>Doshi-Velez, F., and Kim, B. (2017). Towards a rigorous science of interpretable machine learning. arXiv:1702.08608. <a href="https://arxiv.org/abs/1702.08608">https://arxiv.org/abs/1702.08608</a></p>
+<p>Eubanks, V. (2018). <em>Automating inequality: How high-tech tools profile, police, and punish the poor</em>. New York: St. Martin's Press.</p>
+<p>European Union. (2024). Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). <em>Official Journal of the European Union</em>, L series, 12 July 2024. Text consulted at <a href="https://www.springlex.eu/en/packages/ai-act/ai-act-regulation/article-14/">https://www.springlex.eu/en/packages/ai-act/ai-act-regulation/article-14/</a></p>
+<p>ICRC. (2021). <em>ICRC position on autonomous weapon systems</em>. Geneva: International Committee of the Red Cross. <a href="https://www.icrc.org/en/document/icrc-position-autonomous-weapon-systems">https://www.icrc.org/en/document/icrc-position-autonomous-weapon-systems</a></p>
+<p>Matthias, A. (2004). The responsibility gap: Ascribing responsibility for the actions of learning automata. <em>Ethics and Information Technology</em>, 6(3), 175–183.</p>
+<p>Obermeyer, Z., Powers, B., Vogeli, C., and Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. <em>Science</em>, 366(6464), 447–453.</p>
+<p>Parasuraman, R., and Manzey, D. H. (2010). Complacency and bias in human use of automation: An attentional integration. <em>Human Factors</em>, 52(3), 381–410. <a href="https://doi.org/10.1177/0018720810376055">https://doi.org/10.1177/0018720810376055</a></p>
+<p>Royal Commission into the Robodebt Scheme. (2023). <em>Report</em>. Canberra: Commonwealth of Australia. <a href="https://robodebt.royalcommission.gov.au/">https://robodebt.royalcommission.gov.au/</a></p>
+<p>Santoni de Sio, F., and van den Hoven, J. (2018). Meaningful human control over autonomous systems: A philosophical account. <em>Frontiers in Robotics and AI</em>, 5, 15. <a href="https://doi.org/10.3389/frobt.2018.00015">https://doi.org/10.3389/frobt.2018.00015</a></p>
+<p>Scharre, P. (2018). <em>Army of none: Autonomous weapons and the future of war</em>. New York: W. W. Norton.</p>
+<p>Sparrow, R. (2007). Killer robots. <em>Journal of Applied Philosophy</em>, 24(1), 62–77. Open copy: <a href="https://robsparrow.com/wp-content/uploads/Killer-robots.pdf">https://robsparrow.com/wp-content/uploads/Killer-robots.pdf</a></p>
+<p>Topol, E. J. (2019). High-performance medicine: The convergence of human and artificial intelligence. <em>Nature Medicine</em>, 25(1), 44–56. <a href="https://pubmed.ncbi.nlm.nih.gov/30617339/">https://pubmed.ncbi.nlm.nih.gov/30617339/</a></p>
+
+</main>
+<footer class="site"><div class="inner">
+<p>Part of <a href="https://github.com/kalatehjari/Observer">kalatehjari/Observer</a>, a multi-stream meta-cognitive framework for AI-augmented reasoning, whose main page is <a href="https://kalatehjari.github.io/Observer/">here</a>. The skill is released under the MIT licence. These pages were last updated on 23 October 2026.</p>
+</div></footer>
+</body>
+</html>
