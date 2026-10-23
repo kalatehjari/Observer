@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "Section 3.1, C5: \"Table 1 allows the statutory route only for credit refusals.\" and \"Recommendation 2 extends it to all adverse determinations, including debts and sanctions.\" (the welfare row is listed as having no exception)"
+    },
+    "F3": {
+      "score": "D",
+      "where": "Section 3.1, C8: \"Grade 4 requires limits that are absent or set by the system itself.\" and \"The stop's limits are set by humans: a defined safe state and narrow triggers. A clinician can also countermand the stop, so the stop fits the grade 3 description.\""
+    },
+    "F6": {
+      "score": "D",
+      "where": "Section 3.1, C3 (which quotes the Section 5 sentence that a flag costs little if it is wrong): \"Scarcity: when a queue rations a scarce resource, moving one case up moves others down.\" Also Section 4.4: \"In a rationed queue, raising one case lowers others.\""
+    },
+    "F7": {
+      "score": "P",
+      "where": "Partly. Section 3.2, G9, which quotes the end of the second reply in Section 6.1: \"The default to grade 1, and the reply in Section 6.1, place the whole burden of proof on automation without saying why.\" It points at the right passage but does not name the sidestep of the objection's conditional, or the repetition."
+    },
+    "F8": {
+      "score": "D",
+      "where": "Section 3.1, C4: \"A grade-2 deployment that fails its tests 'drops to grade 1'. There, the same reviewers face the same pull to defer, with no test at all.\""
+    },
+    "F9": {
+      "score": "P",
+      "where": "Partly. Section 3.2, G3: \"The deployer certifies itself. The body that certifies answerability is the deploying organisation's own governing body.\" Self-certification is named for answerability, not for the internal audit that certifies real override."
+    },
+    "F10": {
+      "score": "D",
+      "where": "Section 3.1, C4: \"The tests for real review apply only from grade 2. So the human decision at grade 1 is never tested\""
+    },
+    "F11": {
+      "score": "D",
+      "where": "Section 4.5, Pragmatic lens: \"A hospital committee applying Table 2 would need four things that the paper leaves open\", the first being \"the thresholds\"; also Section 4.1: \"The paper gives no figures and leaves its thresholds to certifying bodies.\""
+    },
+    "F12": {
+      "score": "D",
+      "where": "Section 3.1, C11: \"Section 5 states a pass-or-fail rule: all five conditions must pass.\" and \"Section 6.6 says a low-stakes service needs fewer conditions.\""
+    },
+    "F13": {
+      "score": "D",
+      "where": "Section 3.1, C13: \"Section 4.6 says 'Two dynamics' and then describes a third.\""
+    },
+    "F14": {
+      "score": "D",
+      "where": "Section 3.4, K1: \"Table 2 appears and is cited before Table 1.\""
+    },
+    "F15": {
+      "score": "M",
+      "where": "Missed. The analysis accepts the detection delay rather than challenging it: C13, \"The detection delay has no trigger.\"; Section 4.4, \"Collective harms surface late\"."
+    },
+    "F16": {
+      "score": "D",
+      "where": "Section 3.1, C3: \"Queue position is then 'access to a service', so the escalation is a decision about the people it displaces.\""
+    },
+    "F17": {
+      "score": "D",
+      "where": "Section 3.2, G16: \"Robodebt's averaging rule was a fixed calculation, not a learned model.\""
+    },
+    "F18": {
+      "score": "P",
+      "where": "Partly. Section 3.2, G1: \"The military prohibition is asserted rather than argued.\"; Section 3.1, C18: \"the military case is a hypothetical\". The counterargument that machines might apply humanitarian law more consistently than people is not named."
+    },
+    "F19": {
+      "score": "D",
+      "where": "Section 3.3, W1: \"Uniform automated bias is also uniformly correctable once it is found, and the paper's own audit regime depends on that.\""
+    },
+    "F20": {
+      "score": "M",
+      "where": "Missed. Section 3.3 lists the Eubanks claim among claims checked without finding a problem: the uses of Eubanks (2018) and other works \"match what I know of them\"."
+    },
+    "F21": {
+      "score": "D",
+      "where": "Section 3.1, C7: \"A trading firm running a learned policy can pass the paper's own answerability test.\" and \"So 'no one can answer' is overstated. It also conflicts with Table 2\""
+    },
+    "F22": {
+      "score": "D",
+      "where": "Section 3.4, K2: \"The AI Act is cited through a third-party website.\""
+    }
+  },
+  "totals": {
+    "detected": 14,
+    "partly": 3,
+    "missed": 2,
+    "score": 15.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 8,
+      "partly": 0,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 2,
+      "partly": 0,
+      "missed": 2
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 3,
+      "partly": 3,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 227,
+    "exact": 222,
+    "not_paper_quotes": 4
+  },
+  "words": 17123
+}
