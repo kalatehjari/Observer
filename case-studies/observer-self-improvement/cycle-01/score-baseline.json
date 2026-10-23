@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "M",
+      "where": "Not addressed. The analysis adopts the statute exception in its proposed thesis (Section 1, revision item 1: 'unless a statute licenses grade 2 with stated review capacity') and never sets Recommendation 2 or the credit row's statute exception against the welfare row."
+    },
+    "F3": {
+      "score": "P",
+      "where": "Section 1, revision item 8 (Military) names the grade-4 definition problem only for the Section 3.2 military case: 'It therefore fits neither grade 3 (which requires a halt) nor grade 4 (whose limits are absent or self-set).' Section 4.2 (Creative lens), step 4 points at the protective-stop exception but raises safety, not the definitional conflict: 'The paper's grade-4 exception should therefore require two things beyond a countermand being available \"at once\"'."
+    },
+    "F6": {
+      "score": "D",
+      "where": "Section 1, revision item 3 (Fix escalation): 'Section 5 rates escalation at grade 2 because \"a flag that moves a case up a queue costs little if it is wrong\". Where capacity is fixed, escalating one person moves others down.' Also Section 4.4 (Systems-thinking lens), step 2: 'the cost of a false flag falls downstream on other people'."
+    },
+    "F7": {
+      "score": "P",
+      "where": "Section 4.3 (Critical lens), step 1 points at 6.1's second reply: 'the lives-saved premise \"cannot yet\" be supplied ... it obliges the paper to state the price of its values'. Section 3, D1: 'if AI alone does better for the worst-off subgroup, the grade-1 ceilings cost lives and the paper must say so'. It calls the deferral 'legitimate in a normative paper' and does not name the sidestep of the conditional. The repetition is not named."
+    },
+    "F8": {
+      "score": "D",
+      "where": "Section 1, revision item 9 (Grade-1 rows): 'the rows where rubber-stamping matters most are never tested'. Section 4.5 (Pragmatic lens), step 4: 'Grade 1 for high-volume credit refusals means a human decision on every refusal.' Section 1, What would change this recommendation: 'The \"named human decision-maker\" design would not be sound in that domain.' Also Section 4.4, step 5: 'Grade-1 rows are not immune, because deference and deskilling occur under advice too.'"
+    },
+    "F9": {
+      "score": "M",
+      "where": "Not addressed. The internal-audit certifier for real override is never mentioned. Nearest point: Section 1, revision item 9 (Functional grading), 'The deployer's declaration should not set it', which concerns the grade declared under Recommendation 1, not who certifies the real-override condition."
+    },
+    "F10": {
+      "score": "D",
+      "where": "Section 1, revision item 9 (Grade-1 rows): 'As written, the five conditions govern grades 2 to 4 only, so the rows where rubber-stamping matters most are never tested.' Also Section 4.1 (Analytical lens), step 5(a)."
+    },
+    "F11": {
+      "score": "D",
+      "where": "Section 4.5 (Pragmatic lens), step 5: 'The tests need protocols and thresholds. ... the paper can give a method for setting thresholds: pre-registered non-inferiority margins against current human practice'."
+    },
+    "F12": {
+      "score": "M",
+      "where": "Not addressed. The only criticism of 6.6 is of its second reply (Section 4.3, step 5: 'The 6.6 reply, \"fund that capacity\", assumes money that may not exist'), not the conflict between 'licensed only when five conditions hold' and 'needs fewer of them'."
+    },
+    "F13": {
+      "score": "M",
+      "where": "Not addressed. Section 4.4, step 1 restates 4.6 ('two reinforcing loops ... and one delay') without naming the miscount."
+    },
+    "F14": {
+      "score": "D",
+      "where": "Section 1, revision item 10 (Housekeeping): 'Number the tables in order of appearance (Table 2 currently comes first).'"
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not addressed. Section 4.4, step 1 accepts 'the late detection of collective harms' and nothing challenges it for markets."
+    },
+    "F16": {
+      "score": "D",
+      "where": "Section 1, revision item 3 (Fix escalation): 'As written, the same queue movement is \"not a determination\" when it lifts one person and a grade-1 determination (\"deprioritising a patient\") when it lowers another.' Section 4.1 (Analytical lens), steps 1 to 4, sets this against the definition's 'access to a service'."
+    },
+    "F17": {
+      "score": "D",
+      "where": "Section 1, revision item 10 (Scope): 'Robodebt was a rule-based income-averaging scheme, not machine learning.' Also Section 4.1, step 6."
+    },
+    "F18": {
+      "score": "D",
+      "where": "Section 1, revision item 7 (Military): 'Engage the humanitarian argument that autonomous systems might distinguish targets better than stressed humans (Arkin, 2009; verify).' Also Section 4.3, step 5."
+    },
+    "F19": {
+      "score": "D",
+      "where": "Section 1, revision item 7 ('Humans are biased too'): 'Concede that uniform machine error is also easier to audit and to fix in one place.'"
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not addressed. Eubanks is never mentioned. The overbreadth critique of 4.2 (Section 1, revision item 7, Dignity: 'As worded, 4.2 proves too much') targets the dignity argument, not the Eubanks-based claim."
+    },
+    "F21": {
+      "score": "P",
+      "where": "Section 1, revision item 8 (Markets): 'Firms are already held answerable for algorithmic trading failures (Knight Capital, 2012; verify), so \"no one can answer\" is too strong.' This challenges the claim with outside practice but does not name the conflict with the paper's own answerability test."
+    },
+    "F22": {
+      "score": "D",
+      "where": "Section 1, revision item 10 (Housekeeping): 'Cite the AI Act from the Official Journal or EUR-Lex rather than a third-party site, and check its current application dates.'"
+    }
+  },
+  "totals": {
+    "detected": 10,
+    "partly": 3,
+    "missed": 6,
+    "score": 11.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 3,
+      "partly": 2,
+      "missed": 3
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 2,
+      "partly": 0,
+      "missed": 2
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 4,
+      "partly": 1,
+      "missed": 1
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 54,
+    "exact": 34,
+    "not_paper_quotes": 17
+  },
+  "words": 8351
+}

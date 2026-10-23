@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "Audit of the paper, A12: \"Table 1 grants the statute route to credit only. Recommendation 2 grants it to all adverse determinations. On its words that includes welfare debts and sanctions\""
+    },
+    "F3": {
+      "score": "D",
+      "where": "Audit of the paper, A1: \"The protective stop has limits that humans define (a defined safe state) and a clinician who can countermand at once, so it meets the definition of grade 3, not grade 4.\" (also Summary, problem 3)"
+    },
+    "F6": {
+      "score": "D",
+      "where": "Audit of the paper, A10: \"A fraud flag is an escalation that imposes an investigation on a family and feeds the label loop, so it does not cost little when it is wrong.\""
+    },
+    "F7": {
+      "score": "P",
+      "where": "Higher-Order Observer synthesis, Recommendation in full, Change 8: \"6.1: drop the third reply, or rest it explicitly on the dignity premise of 4.2. Add an evidence route\"; Summary, change 8: \"Answer the strongest versions of objections 6.1, 6.2 and 6.3\". Points at the 6.1 replies and the missing route for evidence to raise a ceiling, but names neither the second reply's sidestep of the conditional nor the repetition."
+    },
+    "F8": {
+      "score": "D",
+      "where": "Audit of the paper, A4(b): \"Grade 1 requires a human to select in every case, which needs more review capacity than grade 2. The move relocates the rubber stamp rather than removing it.\""
+    },
+    "F9": {
+      "score": "P",
+      "where": "Audit of the paper, A17 (answerability row): \"The deploying organisation certifies itself.\" Names self-certification, but for answerability; the internal-audit certifier of real override is never mentioned."
+    },
+    "F10": {
+      "score": "D",
+      "where": "Summary, problem 1: \"As written, the six grade-1 rows of Table 1, which hold every adverse, lethal and allocative decision, carry no tests and no drift triggers.\" (also A4)"
+    },
+    "F11": {
+      "score": "D",
+      "where": "Higher-Order Observer synthesis, Confidence, part F: \"thresholds left open\"; also Audit of the paper, A16: \"the conditions are pass-or-fail tests with thresholds set by certifying bodies\""
+    },
+    "F12": {
+      "score": "D",
+      "where": "Audit of the paper, A3: \"Section 6.6 says the tests are proportionate, with fewer for low stakes. But Section 5 contains no mechanism of proportion\""
+    },
+    "F13": {
+      "score": "D",
+      "where": "Audit of the paper, A13: \"The count is wrong: two dynamics are announced, then a third appears.\""
+    },
+    "F14": {
+      "score": "D",
+      "where": "Audit of the paper, A24: \"Table 2 appears before Table 1.\" (also Change 10: \"Put Table 1 before Table 2.\")"
+    },
+    "F15": {
+      "score": "D",
+      "where": "Audit of the paper, B13: \"A market crash is usually detected at once. What takes months is diagnosis and attribution\""
+    },
+    "F16": {
+      "score": "P",
+      "where": "Audit of the paper, A10, which quotes the Sec. 2 queue-position sentence: \"Moving one case up moves others down, and Table 1 treats that as deprioritisation, at grade 1.\" Framed as a cost of escalation; the tension with \"access to a service\" in the definition is not named."
+    },
+    "F17": {
+      "score": "D",
+      "where": "Audit of the paper, B7: \"Robodebt was a rule-based process of data matching and income averaging, not machine learning\""
+    },
+    "F18": {
+      "score": "P",
+      "where": "Audit of the paper, C, G1: \"offensive engagement of military objects that are crewed, occupied or near persons has no row in Table 1 and no recommendation\". Names gaps in the military treatment, but not the argument that machines might apply humanitarian law more consistently than people."
+    },
+    "F19": {
+      "score": "D",
+      "where": "Audit of the paper, B5: \"Uniformity also makes automated bias easier to find and fix.\"; Change 8: \"concede that uniform bias is easier to detect and to fix\""
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not addressed: the analysis never mentions Eubanks or the Sec. 4.2 claim."
+    },
+    "F21": {
+      "score": "P",
+      "where": "Audit of the paper, B6, which quotes the Sec. 5 market sentence: \"What is hard is attributing a market-wide harm to one learned policy. That is a problem of attribution, not of answerability.\" Challenged with outside evidence (market-conduct sanctions), not with the paper's own answerability test."
+    },
+    "F22": {
+      "score": "D",
+      "where": "Audit of the paper, A25: \"The AI Act is cited from a secondary website.\" (also Change 10: \"Cite the AI Act from the Official Journal.\")"
+    }
+  },
+  "totals": {
+    "detected": 13,
+    "partly": 5,
+    "missed": 1,
+    "score": 15.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 6,
+      "partly": 2,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 3,
+      "partly": 0,
+      "missed": 1
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 3,
+      "partly": 3,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 153,
+    "exact": 142,
+    "not_paper_quotes": 11
+  },
+  "words": 15479
+}
