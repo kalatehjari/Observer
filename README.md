@@ -1,5 +1,4 @@
-# Observer Gemini Chat
-
+# Observer Note
 Next.js app with Gemini API on Vercel Hobby plan.  A
 
 Current artificial intelligence reasoning systems predominantly operate through
