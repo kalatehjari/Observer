@@ -1,0 +1,29 @@
+{
+ "draft_sections": {
+  "Abstract": 142,
+  "1 Introduction": 238,
+  "2 What \"authority\" means": 251,
+  "3 The three domains": 432,
+  "4 Ethical stakes": 507,
+  "5 A tiered account": 599,
+  "6 Objections and replies": 535,
+  "7 Recommendations and conclusion": 262
+ },
+ "enhanced_sections": {
+  "Abstract": 154,
+  "1 Introduction": 308,
+  "2 What \"authority\" means": 441,
+  "3 The three domains": 483,
+  "4 Ethical stakes": 658,
+  "5 A tiered account": 965,
+  "6 Objections and replies": 879,
+  "7 Recommendations and conclusion": 345,
+  "8 Limitations": 101
+ },
+ "draft_body_words": 2966,
+ "enhanced_body_words": 4334,
+ "sentences_draft": 194,
+ "sentences_enhanced": 249,
+ "sentences_identical": 127,
+ "word_similarity": 0.735
+}
