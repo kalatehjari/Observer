@@ -1,0 +1,118 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F17: \"Rec 2 would allow welfare debts to be raised at grade 2 under statute. That is the Robodebt class, which the table forbids.\"",
+      "severity_in_analysis": "medium"
+    },
+    "F3": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F08: \"a narrow stop whose limits humans set, and which a clinician can countermand at once, can be halted by a human. That meets the definition of grade 3, not grade 4.\"",
+      "severity_in_analysis": "medium"
+    },
+    "F6": {
+      "score": "D",
+      "where": "Audit > Record > High severity, F04 (quotes the Section 5 sentence that a flag 'costs little if it is wrong'): \"When capacity is fixed, moving one case up moves others down.\" and \"§5's claim that a wrong flag costs little covers false flags only, not missed ones.\"",
+      "severity_in_analysis": "high"
+    },
+    "F7": {
+      "score": "P",
+      "where": "Audit > Record > High severity, F06: \"There is no route for raising a ceiling, so §6.1's claim that the question is testable fails for classes held at grade 1.\" It weakens \"§6.1's second reply to the strongest objection\". Right passage, but neither the sidestep of the conditional nor the repeated conclusion is named.",
+      "severity_in_analysis": "high"
+    },
+    "F8": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F16: \"Where meaningful review is impossible at volume, grade 1 becomes the rubber stamp §6.4 itself warns against.\" Automation bias at grade 1, the fallback grade, is also raised in F01 and F02 (high).",
+      "severity_in_analysis": "medium"
+    },
+    "F9": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F15: \"The trigger system is measured by the party it penalises\", citing Table 2's \"Internal audit using sampled cases\"; the fix sends measurements \"to the external certifier\" and changes the real-override \"Certified by\" cell. Also Systems-thinking lens and C6.",
+      "severity_in_analysis": "medium"
+    },
+    "F10": {
+      "score": "D",
+      "where": "Audit > Record > High severity, F01: \"Grade 1 carries the paper's central safeguard, but no condition, test or trigger applies to it.\"",
+      "severity_in_analysis": "high"
+    },
+    "F11": {
+      "score": "D",
+      "where": "Lens summaries > Pragmatic, step 1: \"Yet it leaves the thresholds to certifiers\", set against Section 5's \"without further philosophical work\". Not carried into a Record entry: the cited F49 (low) does not mention thresholds, and F52 (low) only disputes that the evidence for numerical values does not exist.",
+      "severity_in_analysis": "none"
+    },
+    "F12": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F18: \"§6.6 makes the number of conditions depend on the stakes, a rule of proportion that §5 does not contain.\"",
+      "severity_in_analysis": "medium"
+    },
+    "F13": {
+      "score": "M",
+      "where": "Not named. F14 quotes \"A third dynamic concerns detection.\" only to criticise the triggers; the 'Two dynamics are missing' miscount in Section 4.6 is never flagged.",
+      "severity_in_analysis": "none"
+    },
+    "F14": {
+      "score": "D",
+      "where": "Audit > Record > Low severity table, F33: Section 5 refers to Table 2 before Table 1; fix: \"Number the tables in the order they appear.\"",
+      "severity_in_analysis": "low"
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not challenged. The analysis accepts the detection delay (F14: \"No trigger covers detection delay.\"; Systems-thinking: \"Harms that fall on many people at once surface late.\"). F50 targets the same Section 4.6 sentence only for its unstated correctability requirement.",
+      "severity_in_analysis": "none"
+    },
+    "F16": {
+      "score": "D",
+      "where": "Audit > Record > High severity, F04 (quotes Section 2's definition and its escalation sentence): \"Queue position then decides access to a service, which §2 counts as a determination.\"",
+      "severity_in_analysis": "high"
+    },
+    "F17": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F29: \"the system applied a fixed rule, not a learned model\"; fix: \"Robodebt was a rule-based system that applied an unlawful method under formal human authority.\"",
+      "severity_in_analysis": "medium"
+    },
+    "F18": {
+      "score": "P",
+      "where": "Lens summaries > Analytical, step 5: \"none for credit, markets or force, and the military case is invented\"; also within F05 (high): \"Every case is a failure (Obermeyer, Robodebt) or invented (§3.2).\" The counterargument that machines might apply humanitarian law more consistently than people is not raised.",
+      "severity_in_analysis": "high"
+    },
+    "F19": {
+      "score": "D",
+      "where": "Audit > Record > Medium severity, F28: \"Automated bias sits in one place, so it can be measured and fixed in one place.\"",
+      "severity_in_analysis": "medium"
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not named. Factual claims row 11 accepts \"Doshi-Velez and Kim, Eubanks, Topol and Scharre, as the paper describes them\" as supported.",
+      "severity_in_analysis": "none"
+    },
+    "F21": {
+      "score": "P",
+      "where": "Audit > Record > Medium severity, F25: \"The claim that no one can answer for algorithmic market harm overstates the gap.\" Challenged with external evidence (Knight Capital), not with the paper's own answerability test of a named institution and a named person.",
+      "severity_in_analysis": "medium"
+    },
+    "F22": {
+      "score": "D",
+      "where": "Audit > Record > Low severity table, F34: \"The AI Act is cited through a third-party site\"; also Factual claims row 12: \"The cited URL is a third-party site, not the official text.\"",
+      "severity_in_analysis": "low"
+    }
+  },
+  "totals": {
+    "detected": 13,
+    "partly": 3,
+    "missed": 3,
+    "score": 14.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {"detected": 6, "partly": 1, "missed": 1},
+    "Unsupported or incorrect claims": {"detected": 2, "partly": 0, "missed": 2},
+    "Gaps in the argument or the machinery": {"detected": 4, "partly": 2, "missed": 0},
+    "Citations": {"detected": 1, "partly": 0, "missed": 0}
+  },
+  "quotes": {
+    "total": 253,
+    "exact": 203,
+    "not_paper_quotes": 50
+  },
+  "words": 14801
+}
