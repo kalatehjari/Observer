@@ -1,0 +1,118 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "§3.2 F-05 (also Summary table, row 4): 'Table 1 gives credit a statutory route to grade 2 and gives welfare none.' and 'Rec 2 extends the statutory route to debts and sanctions, so a statute could license Robodebt-style debt raising at grade 2.'",
+      "severity_in_analysis": "high"
+    },
+    "F3": {
+      "score": "D",
+      "where": "§3.3 F-08: 'The protective stop has limits defined by humans and an immediate countermand, so under §2 it is grade 3, not 4.'",
+      "severity_in_analysis": "medium"
+    },
+    "F6": {
+      "score": "D",
+      "where": "§3.2 F-04 (also step 5): quotes 'costs little if it is wrong' and answers 'where the resource is fixed, moving one case up moves another down'; fix 'Qualify §5's sentence with in a queue with spare capacity' (zero-sum queue)",
+      "severity_in_analysis": "high"
+    },
+    "F7": {
+      "score": "P",
+      "where": "§3.2 F-06: quotes the second reply ('That is an empirical question, and the framework makes it testable ...'), types it 'a strong objection only partly answered' and says 'makes it testable' overstates. Partly under the general 'right passage' clause; neither the sidestep of the conditional nor the repetition is named.",
+      "severity_in_analysis": "high"
+    },
+    "F8": {
+      "score": "D",
+      "where": "§3.2 F-02: '§6.4 sends failing grade-2 systems down to it' and '§6.4's credit argument puts refusals at the grade that needs the most review, in exactly the setting where review is called impossible.' Also names automation bias at grade 1: 'The paper's own source on automation bias is about decision aids.'",
+      "severity_in_analysis": "high"
+    },
+    "F9": {
+      "score": "D",
+      "where": "§3.3 F-21: quotes 'Internal audit using sampled cases' and says 'two key conditions are certified by the deployer itself, which is where formality takes hold'",
+      "severity_in_analysis": "medium"
+    },
+    "F10": {
+      "score": "D",
+      "where": "§3.2 F-02: 'Grade 1, where the highest-stakes decisions sit, has no tests'; 'none of the five tests applies there'",
+      "severity_in_analysis": "high"
+    },
+    "F11": {
+      "score": "P",
+      "where": "§3.4 L-10: the override-rate trigger 'has no threshold set in advance' (fix: 'with both thresholds set in advance by the certifying body'). It names one missing threshold but accepts that certifying bodies set thresholds; the missing method is not named.",
+      "severity_in_analysis": "low"
+    },
+    "F12": {
+      "score": "D",
+      "where": "§3.3 F-15: quotes §5 'licensed only when five conditions hold' against §6.6 'needs fewer of them'; '§5 states no proportionality' and 'an information service needs none of them, not fewer'",
+      "severity_in_analysis": "medium"
+    },
+    "F13": {
+      "score": "D",
+      "where": "§3.4 L-02: 'Two dynamics are missing from a static account of grades.' against the same section's 'A third dynamic concerns detection.' Fix: 'write Three dynamics'",
+      "severity_in_analysis": "low"
+    },
+    "F14": {
+      "score": "D",
+      "where": "§3.4 L-03: '§5 prints Table 2 before Table 1.' Fix: 'renumber the tables in order of appearance'",
+      "severity_in_analysis": "low"
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not made. F-13 accepts the detection delay ('Detection delay has no trigger at all') and asks for a trigger; it never challenges the claim that market harms are detected late.",
+      "severity_in_analysis": "none"
+    },
+    "F16": {
+      "score": "D",
+      "where": "§3.2 F-04: quotes §2 'Escalation that changes only a queue position is not such a determination' and says 'In such a queue, position is access to a service, which falls under §2's own definition.'",
+      "severity_in_analysis": "high"
+    },
+    "F17": {
+      "score": "D",
+      "where": "§3.3 F-17: 'Robodebt was a rule-based data-matching process that used averaged income (source read), not a learned model.'",
+      "severity_in_analysis": "medium"
+    },
+    "F18": {
+      "score": "D",
+      "where": "§3.3 F-11: 'it does not answer the argument that machines could comply with humanitarian law better than soldiers under stress.'",
+      "severity_in_analysis": "medium"
+    },
+    "F19": {
+      "score": "P",
+      "where": "§3.4 L-09 and §3.5 claim 17: 'Automated bias is uniform and scaled.' is called an 'Overstated absolute', and 'human biases can also be shared and systematic'. The passage is criticised, but the symmetric point (a uniform error is uniformly correctable or auditable) is not named.",
+      "severity_in_analysis": "low"
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not made. §3.5 claim 20 rates the Eubanks claim 'a fair summary' and 'True'.",
+      "severity_in_analysis": "none"
+    },
+    "F21": {
+      "score": "P",
+      "where": "§3.2 F-07: quotes 'no one can answer for a collective harm ...' and says 'The absolute claim is too strong, because firms answer for their trading systems' (Knight Capital). It challenges the claim on outside evidence, but does not name the conflict with the paper's own answerability test (a named institution and person).",
+      "severity_in_analysis": "high"
+    },
+    "F22": {
+      "score": "D",
+      "where": "§3.4 L-04: quotes 'Text consulted at https://www.springlex.eu/...' and fixes it: 'cite the Official Journal (OJ L, 2024/1689, 12.7.2024) or EUR-Lex' (the secondary source used for the AI Act)",
+      "severity_in_analysis": "low"
+    }
+  },
+  "totals": {
+    "detected": 13,
+    "partly": 4,
+    "missed": 2,
+    "score": 15.0,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {"detected": 7, "partly": 1, "missed": 0},
+    "Unsupported or incorrect claims": {"detected": 1, "partly": 1, "missed": 2},
+    "Gaps in the argument or the machinery": {"detected": 4, "partly": 2, "missed": 0},
+    "Citations": {"detected": 1, "partly": 0, "missed": 0}
+  },
+  "quotes": {
+    "total": 181,
+    "exact": 176,
+    "not_paper_quotes": 5
+  },
+  "words": 16854
+}

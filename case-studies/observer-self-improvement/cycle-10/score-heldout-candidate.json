@@ -1,0 +1,87 @@
+{
+  "findings": {
+    "F1": {
+      "score": "D",
+      "where": "§3.2 Record of findings, F03 (also Summary item 3): 'Credit refusals at grade 2 contradict the asymmetry rule and the paper's own scope.' It quotes §5 'Adverse steps therefore need a human decision-maker of record.' and §6.4's high-volume sentence, and says 'Credit is a high-volume setting of the kind §6.4 excludes.'"
+    },
+    "F2": {
+      "score": "M",
+      "where": "Not named. Nearest: §3.2 F03 quotes Rec 2's statute exception but adopts it as option (b), 'keep grade 2 only as the statutory exception Rec 2 already contemplates', and §1.1 says option (a) 'creates no new conflict'. The exception is not criticised, and no mismatch between Rec 2 and the welfare row is named."
+    },
+    "F3": {
+      "score": "D",
+      "where": "§3.2 F02 (also Summary item 2): 'By definition, a grade 4 system has neither a timely veto nor limits fixed by humans' ... 'The stop's trigger limits are set in advance by accountable humans, the manufacturer or the clinician ... and a clinician can restart the infusion. So the stop meets the definition of grade 3, not grade 4.'"
+    },
+    "F4": {
+      "score": "D",
+      "where": "§3.1 Claims about the world: 'Errors toward \"attention or benefit\" are usually cheaper (§5) | No support | Own knowledge against it ... | Overstated (F04, F18)'. Also §3.2 F06: 'The ceilings in fact rest on two unstated premises. One is about error cost'."
+    },
+    "F5": {
+      "score": "D",
+      "where": "§3.2 F09: 'The claims that escalation is cheap and carries most of the triage benefit have no support.' ... 'Delete the §6.1 claim, or support it with a source.' Also §3.1: '\"most of the triage benefit comes from escalation\" (§6.1) | No support | I know of no source that splits triage benefit this way ... | Unsupported (F09)'."
+    },
+    "F8": {
+      "score": "D",
+      "where": "§3.2 F05: 'The automation-bias research the paper cites largely concerns decision aids, which is to say advice' ... '§6.4's fallback to grade 1 treats grade 1 as immune to this (inference).' Volume is raised in §4.3 Critical: 'volume makes grade 1 review nominal', and in §4.5 Pragmatic: 'Cost at volume'."
+    },
+    "F17": {
+      "score": "D",
+      "where": "§3.2 F11 (also Summary item 9, 'Robodebt is rule-based automation, not AI'): 'Robodebt applied a fixed averaging rule.' Also §3.1: 'Robodebt was a fixed averaging and data-matching rule, not machine learning | Scope problem (F11)'."
+    },
+    "F18": {
+      "score": "P",
+      "where": "§3.2 F08 (also Summary item 8): 'Military coverage is incomplete and internally inconsistent.' ... '(a) The paper's own case is never given a grade or a ceiling.' The counterargument that machines might apply humanitarian law more consistently is not named as unaddressed; §2 PD4 mentions 'whether autonomy improves discrimination' only as one source of a factual dispute about coordination."
+    },
+    "F19": {
+      "score": "D",
+      "where": "§3.2 F17, on the quoted 'One flawed label distorts every decision the system makes ...': 'Uniformity is also what makes automated bias auditable, which the paragraph itself concedes.' The fix repeats it: 'Uniformity also makes automated bias easier to audit'."
+    },
+    "F20": {
+      "score": "D",
+      "where": "§3.2 Low severity, F26 (overstated attribution): '§4.2, \"much of the harm lies in the absence of anyone who will hear a challenge\": Eubanks's main claims concern the profiling and surveillance of the poor. Soften to part of the harm.' Also §3.1: 'this is a theme of the book, not its main claim | Partly supported (F26)'."
+    },
+    "F21": {
+      "score": "D",
+      "where": "§3.2 F12 (also Summary item 10, 'the claim that no one can answer for market harms is overstated and conflicts with §4.1'): 'If named accountability closes the responsibility gap, as §4.1 says, it can close it for markets too.'"
+    },
+    "F22": {
+      "score": "D",
+      "where": "§3.2 Low severity, F30: 'Several references link to unofficial or secondary pages', naming springlex.eu for the AI Act, a Publishers Weekly page for Scharre, a book review for Eubanks and gwern.net for Bainbridge, and 'They also omit volume, issue, pages and DOIs.' Also §3.1: 'the reference link is unofficial (F30)'."
+    }
+  },
+  "totals": {
+    "detected": 10,
+    "partly": 1,
+    "missed": 1,
+    "score": 10.5,
+    "out_of": 12
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 3,
+      "partly": 0,
+      "missed": 1
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 5,
+      "partly": 0,
+      "missed": 0
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 1,
+      "partly": 1,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 181,
+    "exact": 181,
+    "not_paper_quotes": 0
+  },
+  "words": 14248
+}

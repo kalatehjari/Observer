@@ -1,0 +1,87 @@
+{
+  "findings": {
+    "F1": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, A4 (credit refusals at grade 2): 'This contradicts Section 5's rule: \"Adverse steps therefore need a human decision-maker of record\"'. Also 4.1 Analytical lens, step 3: 'Credit refusals at grade 2 conflict with \"adverse steps therefore need a human decision-maker of record\"'."
+    },
+    "F2": {
+      "score": "P",
+      "where": "1.2 Detailed revision plan, A4 (credit refusals at grade 2): 'Rec. 2's exception (\"unless a statute expressly licenses grade 2\") is not invoked in the table.' The exception is set against the credit row only. The welfare row (grade 1, no statutory exception) is not named, and 4.1 lists welfare denials among the rows that 'stand'."
+    },
+    "F3": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, A4 (automatic protective stop at grade 4): 'The paper's own definition of grade 4 requires limits that are \"absent or set by the system itself\". An occlusion stop's limits are set in advance by humans, so it is grade 3.'"
+    },
+    "F4": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, A3 (revision): 'Then ground the principle in two epistemic facts ... This turns asymmetry from a stipulation into a principle derived from deeper facts.' Also 1.1 Bottom line, item 2: 'Re-ground the asymmetry principle.'"
+    },
+    "F5": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, B3 (Replace the weak replies in 6.1): '\"Most of the triage benefit comes from escalation\" is unsupported. Label it as an assumption or cite evidence.' Also C3 (Unsupported empirical claims)."
+    },
+    "F8": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, A5 (The grade-1 gap): 'Yet grade 1 is the fallback when oversight fails (\"the system drops to grade 1\", 6.4) ... no condition guards against automation bias'. And B7 (Address the volume trap): 'But in those settings grade 1 is not real either.'"
+    },
+    "F17": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, B2 (Separate prediction from value-setting): 'The paper should say that Robodebt was automated data-matching, not AI.'"
+    },
+    "F18": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, B3 (Arguments for autonomy in military force): 'Arkin (2009) argued that autonomous systems might comply with international humanitarian law better than human soldiers.' ... 'It should state these positions and answer them.'"
+    },
+    "F19": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, B3 (Replace the weak reply in 6.2): 'Uniform algorithmic bias can be easier to find and fix. The Obermeyer authors reported a substantial reduction in bias after changing the label'."
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not made. Eubanks appears only as a citation-link problem (1.2, C1: 'Eubanks links to a journal's review of the book'). The 4.2 point in B3 targets the entitlement claim ('whether or not the decision is accurate'), not the Eubanks claim."
+    },
+    "F21": {
+      "score": "P",
+      "where": "1.2 Detailed revision plan, A4 (discretionary AI market interventions): 'The claim that \"no one can answer for a collective harm produced by a learned discretionary policy\" also conflicts with the fact that firms are held liable for failures of algorithmic trading'. The sentence is challenged with outside facts (firm liability), not with the paper's own answerability condition."
+    },
+    "F22": {
+      "score": "D",
+      "where": "1.2 Detailed revision plan, C1 (Citations): 'The AI Act links to a commercial site.' ... 'Journal entries also lack volume, issue, pages and DOI.'"
+    }
+  },
+  "totals": {
+    "detected": 9,
+    "partly": 2,
+    "missed": 1,
+    "score": 10.0,
+    "out_of": 12
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 2,
+      "partly": 2,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 4,
+      "partly": 0,
+      "missed": 1
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 2,
+      "partly": 0,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 86,
+    "exact": 64,
+    "not_paper_quotes": 13
+  },
+  "words": 12782
+}
