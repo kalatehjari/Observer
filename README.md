@@ -25,3 +25,12 @@ further outline evaluation metrics, use cases in academia, business strategy, ed
 and decision-making, and discuss ethical considerations. Observer establishes a new
 paradigm for AI reasoning that prioritizes cognitive diversity, visual transparency, and
 human-centered oversight.
+
+## Claude skill and case studies
+
+This repository also holds Observer as a skill for Claude, with two case studies that test it.
+
+- [The skill, version 1.10](https://github.com/kalatehjari/Observer/blob/main/.claude/skills/observer-multi-lens-reasoning/SKILL.md): five lenses, an audit of supplied material, a Higher-Order Observer synthesis with confidence scores, and a transparency report.
+- [Case study: AI authority over sensitive decisions](https://github.com/kalatehjari/Observer/tree/main/case-studies/ai-authority-sensitive-decisions): an agent-written ethics paper, two Observer passes, a blind review and a comparison of the passes.
+- [Case study: Observer self-improvement](https://github.com/kalatehjari/Observer/tree/main/case-studies/observer-self-improvement): ten cycles in which the skill critiqued and revised itself, with blind tests and a held-out check.
+- [Project pages](https://kalatehjari.github.io/Observer/observer-skill/): the skill, the case-study paper and the self-improvement results, as web pages.
