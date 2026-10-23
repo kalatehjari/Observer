@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "4.1 Consistency, C2 (also Summary item 5): \"R2 extends the statutory licence to every adverse determination, welfare debts and sanctions included; Table 1 confines it to credit refusals.\""
+    },
+    "F3": {
+      "score": "D",
+      "where": "4.1 Consistency, C3: \"grade 4 requires limits that are absent or self-set. The stop's safe state is fixed in advance by humans and a clinician can countermand it at once, which is grade 3 by the §2 test.\""
+    },
+    "F6": {
+      "score": "D",
+      "where": "4.3 Claims about the world, W6: \"Escalation to investigation (fraud, child protection) imposes burden and stigma and feeds the label loop. In a fixed-capacity queue, moving one case up moves others down\""
+    },
+    "F7": {
+      "score": "D",
+      "where": "4.2 Gaps, G6, on the second reply's 'That is an empirical question...': \"the paper calls the lives-saved question testable but names no result that would change a ceiling, so evidence cannot revise its restraint\"; 5.3 Critical, step 4: \"if a validated system would beat human decisions for every subgroup, a fixed grade-1 ceiling costs identifiable patients and claimants, and the paper names no result that could lift a ceiling\". The repetition of the conclusion is not named."
+    },
+    "F8": {
+      "score": "D",
+      "where": "4.2 Gaps, G1: \"grade 1 is also the fallback when grade-2 oversight fails\", followed by automation-bias evidence at the advice grade; Summary item 1: \"though automation bias operates there\"; 5.3 Critical, step 2: \"The sources I read place automation bias exactly there.\""
+    },
+    "F9": {
+      "score": "D",
+      "where": "4.2 Gaps, G9: \"real override, the subject of what the paper calls its strongest objection, is certified by the deployer's own internal audit\""
+    },
+    "F10": {
+      "score": "D",
+      "where": "4.2 Gaps, G1: \"Grade 1 is an untested safe harbour.\" ... \"sit at grade 1, where no condition, test or trigger applies\""
+    },
+    "F11": {
+      "score": "D",
+      "where": "4.1 Consistency, C10: \"yet thresholds and metrics are left open\", quoting the §5 sentence that leaves thresholds to each certifying body"
+    },
+    "F12": {
+      "score": "D",
+      "where": "4.1 Consistency, C6: \"§6.6 calls the tests proportionate; §5 and R1 require all five.\""
+    },
+    "F13": {
+      "score": "D",
+      "where": "4.1 Consistency, C14: \"'Two dynamics', three listed.\""
+    },
+    "F14": {
+      "score": "D",
+      "where": "4.4 Convention, V1: \"Table 2 appears before Table 1.\""
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not made. 4.2 Gaps, G10 accepts the §4.6 detection-delay claim and asks only for a trigger (\"no trigger addresses detection delay\"); the claim for markets is not challenged."
+    },
+    "F16": {
+      "score": "P",
+      "where": "4.3 Claims about the world, W6: \"In a fixed-capacity queue, moving one case up moves others down, which is the deprioritisation Table 1 puts at grade 1, and no human reviews the people displaced.\" Names the access effect of queue moves, but not the tension with the §2 definition, which includes access to a service and excludes queue position."
+    },
+    "F17": {
+      "score": "M",
+      "where": "Not made. The 4.3 claims table (row 3) marks the Robodebt description consistent; W7 concerns human review, not whether the scheme was AI."
+    },
+    "F18": {
+      "score": "P",
+      "where": "2. Recommendation, Confidence scores: \"force against persons kept with humans 64 (strong normative and ICRC support, contested by states, thinly argued in the paper, G4)\"; 4.2 Gaps, G4: \"The paper never classifies its own military case\". The argument that machines might apply humanitarian law more consistently than people is not raised (G14 answers only the US DoD standard)."
+    },
+    "F19": {
+      "score": "P",
+      "where": "4.3 Claims about the world, W4 quotes \"One flawed label distorts every decision the system makes\" and calls it overstated: \"A flawed label biases a system's decisions systematically, but it does not change every individual decision.\" The symmetric point, that a uniform error is also uniformly correctable or auditable, is not made."
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not made. The 4.3 claims table (row 18) marks the Eubanks claim \"Consistent\"."
+    },
+    "F21": {
+      "score": "D",
+      "where": "4.1 Consistency, C4: \"A firm can name such people for a discretionary trading system, so by the test as written answerability does not fail, contrary to §5.\""
+    },
+    "F22": {
+      "score": "D",
+      "where": "4.4 Convention, V2: \"The AI Act is cited from a third-party site.\" ... \"Fix: cite the Official Journal text on EUR-Lex.\""
+    }
+  },
+  "totals": {
+    "detected": 13,
+    "partly": 3,
+    "missed": 3,
+    "score": 14.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 7,
+      "partly": 1,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 0,
+      "partly": 1,
+      "missed": 3
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 5,
+      "partly": 1,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 209,
+    "exact": 204,
+    "not_paper_quotes": 5
+  },
+  "words": 14973
+}
