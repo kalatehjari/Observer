@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "M",
+      "where": "Not named. Recommendation 2 is never discussed, and the statute route is offered as an option for credit and welfare (Sections 1.5 and 1.6), not criticised or set against the welfare row."
+    },
+    "F3": {
+      "score": "D",
+      "where": "Section 1.3, item 3 (Repair the grade scale): 'The exception is not grade 4. ... The protective stop moves the system to a safe state that humans have defined, and a clinician can countermand it at once. By the paper's own definitions, that is grade 3.'"
+    },
+    "F6": {
+      "score": "D",
+      "where": "Section 2, C3: '\"Favourable\" decisions and escalation are neither cheap nor one-sided' ... 'Systems: escalation competes for a fixed queue'; Section 4.4, step 3: 'In a fixed-capacity queue, every escalation deprioritises someone else.'; Section 1.3, item 7: 'it undercuts Section 5's claim that a wrong flag \"costs little\"'."
+    },
+    "F7": {
+      "score": "M",
+      "where": "Not addressed. Section 6.1 and the lives-saved objection are not discussed."
+    },
+    "F8": {
+      "score": "D",
+      "where": "Section 1.3, item 4: 'Section 6.4 rejects grade 2 for credit refusals because, at high volume, \"meaningful review is impossible\". The same volume turns a grade-1 \"decision-maker of record\" into a formality'; also Section 1.1: 'The grade-1 default for high-volume adverse decisions runs into the same rubber-stamp problem that the paper uses to reject grade 2.'"
+    },
+    "F9": {
+      "score": "P",
+      "where": "Section 1.3, item 10 (Independent certification): 'Answerability is certified by the deploying organisation's own governing body, so Robodebt's department would have certified itself.'; Section 4.5, step 3: 'The certifiers named in Table 2 often do not exist or are not independent.' Self-certification is named for answerability, not for real override's internal audit."
+    },
+    "F10": {
+      "score": "D",
+      "where": "Section 1.3, item 4: 'Section 2 concedes that advice shapes what humans do, yet the five conditions apply only from grade 2.' ... 'apply right target and real override from grade 1.'"
+    },
+    "F11": {
+      "score": "D",
+      "where": "Section 1.3, item 10 (Thresholds): 'Leaving thresholds to certifiers moves the value judgements; it does not remove them.' ... 'Say who should set thresholds, and on what principles.'"
+    },
+    "F12": {
+      "score": "M",
+      "where": "Not addressed. Section 6.6's 'needs fewer of them' is never set against Section 5's 'licensed only when five conditions hold'; D5 on low-resource settings discusses additivity only."
+    },
+    "F13": {
+      "score": "M",
+      "where": "Not addressed."
+    },
+    "F14": {
+      "score": "D",
+      "where": "Section 1.3, item 9 (Housekeeping): 'Table 2 appears before Table 1.'"
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not addressed. The Systems mind map (Section 4.4) repeats 'Delay before harm is detected' without challenging it for markets."
+    },
+    "F16": {
+      "score": "P",
+      "where": "Section 1.3, item 5: 'A ranking of patients for scarce beds therefore carries the \"deprioritise\" permission and sits at grade 1. The escalation carve-out should be worded so that it cannot be read to cover rankings.' Points at the queue-position carve-out but does not set it against the definition's 'access to a service'."
+    },
+    "F17": {
+      "score": "D",
+      "where": "Section 1.3, item 8: 'Robodebt was rule-based data matching with income averaging, not machine learning.'; Section 1.2: 'Robodebt was not machine learning at all.'"
+    },
+    "F18": {
+      "score": "D",
+      "where": "Section 1.3, item 6: 'Engage the strongest argument for autonomy: constrained autonomous systems might comply with the law of armed conflict better than stressed humans do (Arkin, 2009).'"
+    },
+    "F19": {
+      "score": "D",
+      "where": "Section 1.3, item 7: 'Section 6.2 concedes too little. Uniform bias is also easier to detect and correct than scattered human bias.'"
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not addressed. Eubanks is used as support (Section 3, D1; Section 4.4, step 4), never said to overgeneralise."
+    },
+    "F21": {
+      "score": "P",
+      "where": "Section 1.3, item 9 (Markets): 'The claim that no one can answer for harm from a learned trading policy is too strong, because firms answer for their algorithms.'; Section 4.1, step 2. Challenged with outside law (Knight Capital, MiFID II), not with the paper's own answerability test."
+    },
+    "F22": {
+      "score": "D",
+      "where": "Section 1.3, item 9 (AI Act): 'Cite the Official Journal or EUR-Lex rather than a third-party site.'; Section 4.1, step 2: 'The AI Act is cited through a third-party website.'"
+    }
+  },
+  "totals": {
+    "detected": 10,
+    "partly": 3,
+    "missed": 6,
+    "score": 11.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 3,
+      "partly": 2,
+      "missed": 3
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 2,
+      "partly": 0,
+      "missed": 2
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 4,
+      "partly": 1,
+      "missed": 1
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 55,
+    "exact": 35,
+    "not_paper_quotes": 16
+  },
+  "words": 10586
+}

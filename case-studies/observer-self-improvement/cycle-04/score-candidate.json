@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C2 (also §1 Summary): \"Table 1 limits the statutory route to credit refusals. Rec 2 opens it to debts and sanctions, which is the Robodebt class.\" and \"A regulator following Rec 2 could license grade-2 debt raising that Table 1 forbids.\""
+    },
+    "F3": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C5: \"A stop to a defined safe state that a clinician can countermand has limits set by humans. It therefore fails the second condition of grade 4 and meets the definition of grade 3\""
+    },
+    "F6": {
+      "score": "D",
+      "where": "§4.3 Gaps, G5: \"Yet an investigation burdens the person and feeds the label loop. The Dutch childcare-benefits case shows that wrong flags are not cheap\"; also §4.2 C7 (zero-sum queue): \"In a queue for a scarce resource, moving one case up moves others down.\""
+    },
+    "F7": {
+      "score": "P",
+      "where": "§4.3 Gaps, G10 targets §6.1's second reply but for a different flaw: \"So \\\"makes it testable\\\" is not borne out.\" (with §2.2: \"say plainly that the paper accepts worse outcomes in some cases in exchange for contestability\"). Right passage; neither the sidestep of the objection's conditional nor the repetition is named."
+    },
+    "F8": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C6: \"If review is impossible at volume, grade 1 will be impossible too, or it will become a rubber stamp.\" (automation bias at grade 1 also in G1)"
+    },
+    "F9": {
+      "score": "D",
+      "where": "§4.3 Gaps, G12: \"The two conditions most prone to drift are certified by the party that gains from a higher grade.\" (quotes \"Internal audit using sampled cases\")"
+    },
+    "F10": {
+      "score": "D",
+      "where": "§4.3 Gaps, G1: \"Yet it attaches nothing to grade 1: no minimum review time, no seeded cases, no measure of disagreement and no trigger.\""
+    },
+    "F11": {
+      "score": "D",
+      "where": "§4.4 Claims about the world, W7: \"the same section leaves thresholds to certifiers\"; fix: \"each certifier must set thresholds\". Missing thresholds named; §3 'Noise resolved' calls the deferral itself \"defensible\" and no method for setting them is named."
+    },
+    "F12": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C9: \"§5 requires all five conditions at every grade from 2 to 4 and scales nothing to stakes.\" (quotes §6.6 \"needs fewer of them\" passage and §5 \"licensed only when five conditions hold\")"
+    },
+    "F13": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C10: quotes \"Two dynamics are missing from a static account of grades.\" and \"A third dynamic concerns detection.\"; fix: \"change \\\"Two\\\" to \\\"Three\\\"\""
+    },
+    "F14": {
+      "score": "D",
+      "where": "§4.2 Conflicts, K5: \"Table 2 is presented before Table 1.\""
+    },
+    "F15": {
+      "score": "M",
+      "where": "Not made. G8 quotes the §4.6 detection-delay sentence only to note a missing trigger, and §5.4 endorses it (\"slow detection lets damage outrun correction\"); W1's attribution point is aimed at the answerability claim, not at detection delay."
+    },
+    "F16": {
+      "score": "D",
+      "where": "§4.2 Conflicts, C7, quoting the §2 queue-position exclusion: \"In a queue for a scarce resource, moving one case up moves others down.\"; §5.4 Systems lens: \"In a scarce queue, escalation is allocation\""
+    },
+    "F17": {
+      "score": "D",
+      "where": "§4.3 Gaps, G11: \"two of the paper's examples are not machine learning\" ... \"Robodebt was data matching against averaged income.\""
+    },
+    "F18": {
+      "score": "P",
+      "where": "§4.3 Gaps, G16: \"This is the documented military case the paper lacks.\"; G2: \"the military ceiling rests more on the ICRC's authority than on the paper's own argument.\" Thinness named; the counterargument that machines might apply humanitarian law more consistently than people is not."
+    },
+    "F19": {
+      "score": "P",
+      "where": "§4.2 Conflicts, C8 attacks §6.2's uniform-versus-heterogeneous contrast (\"That is uniform human bias, the kind §6.2 says humans do not show.\"; fix: \"Add that an algorithm makes bias measurable\"). Right passage; the point that a corrected label corrects every decision at once is not named."
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not made. §4.4 claims table rates \"automated tools punish the poor (§4.2)\" (Eubanks 2018) as \"Own knowledge: fair summaries\" and \"Consistent\"."
+    },
+    "F21": {
+      "score": "P",
+      "where": "§4.4 Claims about the world, W1: \"firms are held answerable for harms from automated trading.\" Challenges \"no one can answer\" with external evidence (Knight Capital), but does not name the conflict with the paper's own answerability test (a named institution and a named person)."
+    },
+    "F22": {
+      "score": "D",
+      "where": "§4.2 Conflicts, K6: \"The regulation is cited through a third-party website.\"; fix: \"cite the Official Journal or EUR-Lex text\""
+    }
+  },
+  "totals": {
+    "detected": 13,
+    "partly": 4,
+    "missed": 2,
+    "score": 15.0,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 7,
+      "partly": 1,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 1,
+      "partly": 1,
+      "missed": 2
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 4,
+      "partly": 2,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 190,
+    "exact": 154,
+    "not_paper_quotes": 34
+  },
+  "words": 14538
+}
