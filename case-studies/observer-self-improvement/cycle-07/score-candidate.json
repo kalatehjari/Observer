@@ -1,0 +1,115 @@
+{
+  "findings": {
+    "F2": {
+      "score": "D",
+      "where": "3.2 Findings, A5 (\"Conflict: the statutory exception covers welfare in Recommendation 2 but not in Table 1\"): \"Recommendation 2 would let a statute license automated debt-raising at grade 2. ... Table 1 allows the statutory route only for credit refusals.\" Also Summary, problem 5."
+    },
+    "F3": {
+      "score": "D",
+      "where": "3.2 Findings, A7: \"The stop's limit is a defined safe state set by humans, and a clinician can countermand it at once. So it fails both parts of the grade 4 definition and meets the grade 3 test.\""
+    },
+    "F6": {
+      "score": "D",
+      "where": "3.2 Findings, A11 (quotes Section 4.6 on investigations and Section 5 \"costs little if it is wrong\"): \"So a wrong fraud flag is costly, and human review did not prevent the harm.\" Zero-sum queue also in A4: \"moving one case up moves others down\"."
+    },
+    "F7": {
+      "score": "P",
+      "where": "3.2 Findings, A16: \"The second reply in Section 6.1 treats the deprioritisation ceiling as waiting on an empirical answer. The third reply, and the dignity claim in Section 4.2, treat it as a matter of principle.\" Points at the second reply and its open empirical question, but does not name the sidestep of the objection's conditional or the repeated conclusion. Scored P under the rubric's general Partly definition (right passage, specific conflict missed), not under the F7-specific Partly clause."
+    },
+    "F8": {
+      "score": "D",
+      "where": "3.2 Findings, A3: \"The paper calls this the strongest objection (Section 6.4), but answers it only for grade 2.\" Summary: \"Grade 1, the paper's main safeguard, has no tests. Yet the review the paper cites finds automation bias with advisory tools.\" Lens summaries, Critical: \"a nominal grade 1, where a human confirms most recommendations under time pressure, may protect people less than an honest grade 2\"."
+    },
+    "F9": {
+      "score": "D",
+      "where": "3.2 Findings, A35: \"Real override, the condition most exposed to the paper's strongest objection, rests on internal audit alone.\" Fix: \"Add external sampling of real override at least once a year.\""
+    },
+    "F10": {
+      "score": "D",
+      "where": "3.2 Findings, A3: \"Yet Table 2 applies only to grades 2 to 4. So every grade 1 ceiling can be met on paper while the system makes the decision in fact.\" Summary: \"Grade 1, the paper's main safeguard, has no tests.\""
+    },
+    "F11": {
+      "score": "D",
+      "where": "3.2 Findings, A22: \"choosing the subgroups, the error measures and the thresholds is the value-laden work that Section 4.3 says no metric avoids\"; fix: \"remains a value choice for which the certifying body should give public reasons\"."
+    },
+    "F12": {
+      "score": "D",
+      "where": "3.2 Findings, A12 (\"Conflict: which conditions apply to which deployments is stated four ways\"), quoting both \"licensed only when five conditions hold\" and \"needs fewer of them\": \"Section 6.6 says low-stakes services need fewer conditions, but Section 5 gives no rule for proportionality.\""
+    },
+    "F13": {
+      "score": "D",
+      "where": "3.2 Findings, A34: \"The paragraph announces two dynamics and then gives three.\""
+    },
+    "F14": {
+      "score": "D",
+      "where": "3.2 Findings, A25 (\"Convention: tables out of order\"): \"Table 2 appears before Table 1 in Section 5.\""
+    },
+    "F15": {
+      "score": "D",
+      "where": "3.2 Findings, A34: \"From my own knowledge, market crashes are detected at once. What is slow is working out what caused them.\" Also 3.3, W18."
+    },
+    "F16": {
+      "score": "D",
+      "where": "3.2 Findings, A4, quoting Section 2's \"Escalation that changes only a queue position is not such a determination\": \"When review capacity is fixed or a good is rationed, moving one case up moves others down ... Escalation at grade 2 and deprioritisation at grade 1 then describe the same act from two sides.\""
+    },
+    "F17": {
+      "score": "D",
+      "where": "3.2 Findings, A19: \"Robodebt was an automated data-matching process that compared Centrelink records with averaged tax-office income. No learning system is described ... So on a narrow reading, the paper's main economic case falls outside AI.\""
+    },
+    "F18": {
+      "score": "D",
+      "where": "3.2 Findings, A17: \"Machines might apply the principle of distinction more reliably than stressed humans.\""
+    },
+    "F19": {
+      "score": "D",
+      "where": "3.2 Findings, A20: \"The Obermeyer bias was found by an audit. A Berkeley centre's summary says that changing the algorithm so it no longer uses cost as the proxy eliminates the bias.\" Suggested wording: \"Algorithmic bias can be easier to find and fix than human bias when auditors have access\"."
+    },
+    "F20": {
+      "score": "M",
+      "where": "Not raised. 3.3, W10 rates the Eubanks claim \"Own knowledge: accurate\" and \"True\"."
+    },
+    "F21": {
+      "score": "D",
+      "where": "3.2 Findings, A14: \"The claim also conflicts with Section 4.1, where naming closes the answerability gap.\""
+    },
+    "F22": {
+      "score": "D",
+      "where": "3.2 Findings, A28: \"The citation points to a third-party site rather than the Official Journal or EUR-Lex.\""
+    }
+  },
+  "totals": {
+    "detected": 17,
+    "partly": 1,
+    "missed": 1,
+    "score": 17.5,
+    "out_of": 19
+  },
+  "by_type": {
+    "Internal consistency and structure": {
+      "detected": 8,
+      "partly": 0,
+      "missed": 0
+    },
+    "Unsupported or incorrect claims": {
+      "detected": 3,
+      "partly": 0,
+      "missed": 1
+    },
+    "Gaps in the argument or the machinery": {
+      "detected": 5,
+      "partly": 1,
+      "missed": 0
+    },
+    "Citations": {
+      "detected": 1,
+      "partly": 0,
+      "missed": 0
+    }
+  },
+  "quotes": {
+    "total": 156,
+    "exact": 155,
+    "not_paper_quotes": 1
+  },
+  "words": 15665
+}
